@@ -70,8 +70,21 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA |
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| O sistema deve permitir que o usuário registre suas dívidas, incluindo valor, motivo e data de vencimento. | ALTA |
+|RF-002| Deve ser possível categorizar cada dívida para uma melhor organização financeira.   | ALTA |
+|RF-003| O usuário deve poder visualizar de forma clara e precisa o valor total de suas dívidas, bem como uma lista detalhada de cada uma delas.   | ALTA |
+|RF-004| O usuário deve poder registrar suas despesas fixas e variáveis de maneira sistemática.   | ALTA |
+|RF-005| Deve ser possível categorizar as despesas por tipo (alimentação, transporte, moradia, etc.).   | ALTA |
+|RF-006| Os usuários devem ter a opção de cadastrar múltiplas fontes de renda na aplicação.   | ALTA |
+|RF-007| A aplicação deve fornecer conteúdo educativo sobre finanças pessoais, adaptado à realidade e às necessidades do público em situação de inadimplência.   | ALTA |
+|RF-008| Os usuários devem ter acesso a dicas personalizadas com base em sua profissão e situação financeira.   | ALTA |
+|RF-009| Os usuários devem ter acesso a um histórico de transações que lhes permita revisar todas as movimentações financeiras realizadas.   | ALTA |
+|RF-010| A aplicação deve permitir que os usuários estabeleçam metas financeiras realistas e acompanhem seu progresso em relação ao orçamento estipulado.   | MÉDIA |
+|RF-011| Deve haver opção para priorizar algumas dívidas, destacando-as na interface.   | MÉDIA |
+|RF-012| Deve ser possível armazenar e acessar facilmente documentos importantes relacionados às despesas, como recibos e notas fiscais.   | MÉDIA |
+|RF-013| Deve haver um gráfico ou relatório visual que mostre o progresso em relação às metas financeiras estabelecidas.   | MÉDIA |
+|RF-014| A aplicação deve fornecer ferramentas para ajudar os usuários a avaliar alternativas financeiras, como financiamento de um carro novo versus reparos no carro atual.   | MÉDIA |
+|RF-015| Deve haver recursos para auxiliar os usuários na negociação de suas dívidas, visando minimizar os gastos com juros.   | MÉDIA |
 
 
 ### Requisitos não Funcionais
