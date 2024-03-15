@@ -9,10 +9,6 @@ Dessa forma, as dificuldades no gerenciamento de recursos para uma parcela signi
 
 Como uma aplicação web de gerenciamento financeiro, voltada para a população em situação de inadimplência, pode contribuir para a organização das finanças?
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
@@ -20,14 +16,12 @@ Como uma aplicação web de gerenciamento financeiro, voltada para a população
 Desenvolver uma aplicação web de finanças pessoais voltada para pessoas em situação de inadimplência para ajudar a organizar suas dívidas.
 
 ### ESPECÍFICOS
-Exibir de forma clara e precisa os valores de entrada e saída financeira, com a devida categorização de cada transação;
-Estabelecer metas financeiras e possibilitar o acompanhamento do progresso em relação ao orçamento estipulado;
-Registrar despesas fixas e variáveis de maneira sistemática;
-Fornecer conteúdo educativo sobre finanças pessoais, adaptado à realidade e às necessidades do público em situação de inadimplência.
+> - Exibir de forma clara e precisa os valores de entrada e saída financeira, com a devida categorização de cada transação;
+> - Estabelecer metas financeiras e possibilitar o acompanhamento do progresso em relação ao orçamento estipulado;
+> - Registrar despesas fixas e variáveis de maneira sistemática;
+> - Fornecer conteúdo educativo sobre finanças pessoais, adaptado à realidade e às necessidades do público em situação de inadimplência.
 
  
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
 
@@ -37,19 +31,12 @@ Mesmo em um contexto pós-pandemia, em que a economia do país ainda se restabel
 Essa conexão direta entre o endividamento e a insegurança alimentar ressalta a necessidade urgente de melhorar a saúde financeira dessas famílias, e possibilitar de forma simples o acesso a orientações e cases que possam ajudar a diminuir os impactos que a desorganização financeira pode gerar para sua família.
 
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
-
 ## Público-Alvo
 
 O público-alvo da aplicação web são pessoas em situação de inadimplência, que buscam:
-Aprimorar a gestão de suas finanças, buscando um maior controle sobre seus recursos e a tomada de decisões financeiras mais conscientes;
-Alcançar seus objetivos financeiros, concretizando sonhos e conquistando uma melhor qualidade de vida;
-Reduzir o endividamento, quitando dívidas e desfrutando de uma maior tranquilidade financeira.
+> - Aprimorar a gestão de suas finanças, buscando um maior controle sobre seus recursos e a tomada de decisões financeiras mais conscientes;
+> - Alcançar seus objetivos financeiros, concretizando sonhos e conquistando uma melhor qualidade de vida;
+> - Reduzir o endividamento, quitando dívidas e desfrutando de uma maior tranquilidade financeira.
 
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+
