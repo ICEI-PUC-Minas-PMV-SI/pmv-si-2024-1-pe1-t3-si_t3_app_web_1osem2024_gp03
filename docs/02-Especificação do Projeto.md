@@ -6,8 +6,6 @@ Durante a fase inicial de planejamento do projeto, seguimos uma abordagem estrut
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
-
 #### Persona 1:
 
 João Oliveira tem 45 anos, é comerciante autônomo que trabalha como vendedor ambulante nas ruas de Recife. Ele enfrenta dificuldades financeiras devido à queda nas vendas durante a pandemia e acumulou dívidas que o deixaram em situação de inadimplência.
