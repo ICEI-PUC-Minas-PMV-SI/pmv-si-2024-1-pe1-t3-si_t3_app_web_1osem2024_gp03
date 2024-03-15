@@ -20,7 +20,7 @@ Desenvolver uma aplicação web de finanças pessoais voltada para pessoas em si
 
 ## Orientador
 
-*Nesley Jesus Daher de Oliveira
+* Nesley Jesus Daher de Oliveira
 
 ## Instruções de utilização
 
