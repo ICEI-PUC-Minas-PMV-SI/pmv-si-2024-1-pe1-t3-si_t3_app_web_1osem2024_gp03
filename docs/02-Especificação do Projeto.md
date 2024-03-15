@@ -1,8 +1,5 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-
 A ideia do projeto advém de um contexto de falta de controle financeiro enfrentada por diferentes personas, resultando em situações de inadimplência, dificuldades em estabelecer metas e acompanhar o progresso financeiro, além da necessidade de acesso a conteúdo educativo relevante para cada contexto específico. As personas enfrentam desafios diversos, como queda na renda, despesas médicas inesperadas, ou falta de trabalho, exigindo uma solução flexível e personalizada.
 
 Durante a fase inicial de planejamento do projeto, seguimos uma abordagem estruturada que incluiu os seguintes passos: identificação das personas mais relevantes para o escopo da aplicação, análise detalhada das necessidades e desafios dos usuários, e elaboração dos requisitos fundamentais que orientam o desenvolvimento do projeto.
@@ -41,7 +38,7 @@ José da Silva tem 55 anos, é corretor de imóveis e sua renda vem das comissõ
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
+|EU COMO...          | QUERO/PRECISO ...                  |PARA ...                                |
 |--------------------|------------------------------------|----------------------------------------|
 |João Oliveira       | Visualizar de forma clara e precisa os valores das minhas dívidas, categorizando cada uma delas. | Entender melhor minha situação financeira.
 |João Oliveira       | Adicionar novas dívidas à minha lista, informando o valor, o motivo e a data de vencimento.     | Manter meu registro financeiro atualizado. |
@@ -68,8 +65,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
+|ID    | Descrição do Requisito                  | Prioridade |
+|------|-----------------------------------------|------------|
 |RF-001| O sistema deve permitir que o usuário registre suas dívidas, incluindo valor, motivo e data de vencimento. | ALTA |
 |RF-002| Deve ser possível categorizar cada dívida para uma melhor organização financeira.   | ALTA |
 |RF-003| O usuário deve poder visualizar de forma clara e precisa o valor total de suas dívidas, bem como uma lista detalhada de cada uma delas.   | ALTA |
@@ -90,7 +87,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
+|-------|-------------------------|-----------|
 |RNF-001| A interface da aplicação deve ser intuitiva e de fácil utilização, considerando o público-alvo, que pode ter diferentes níveis de familiaridade com a tecnologia. | ALTA |
 |RNF-002| A aplicação deve garantir a segurança dos dados dos usuários, implementando medidas como criptografia e autenticação robusta. |  ALTA |
 |RNF-003| A aplicação deve estar disponível de forma consistente, com tempo de inatividade mínimo para garantir que os usuários possam acessá-la sempre que necessário. |  ALTA |
