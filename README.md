@@ -1,23 +1,26 @@
 # TÍTULO DO PROJETO
 
-`CURSO`
+`SISTEMAS DE INFORMAÇÃO`
 
-`DISCIPLINA`
+`PROJETO DE APLICAÇÕES WEB`
 
-`SEMESTRE`
+`1`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Desenvolver uma aplicação web de finanças pessoais voltada para pessoas em situação de inadimplência para ajudar a organizar suas dívidas.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Danniel Cardoso Lucas
+* Danilo Leal Raul
+* Italo Willian Marques Resende
+* João de Sousa Lourenço
+* Marco Tulio Crecencio Araujo
+* Mariana Carvalho Silva Ribeiro
+* Rodrigo Carvalho Cattoi da Costa
 
 ## Orientador
 
-* Nome completo do professor 1
+*Nesley Jesus Daher de Oliveira
 
 ## Instruções de utilização
 

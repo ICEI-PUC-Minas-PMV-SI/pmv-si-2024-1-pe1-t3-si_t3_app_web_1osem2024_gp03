@@ -16,10 +16,10 @@ Como uma aplicação web de gerenciamento financeiro, voltada para a população
 Desenvolver uma aplicação web de finanças pessoais voltada para pessoas em situação de inadimplência para ajudar a organizar suas dívidas.
 
 ### ESPECÍFICOS
-> - Exibir de forma clara e precisa os valores de entrada e saída financeira, com a devida categorização de cada transação;
-> - Estabelecer metas financeiras e possibilitar o acompanhamento do progresso em relação ao orçamento estipulado;
-> - Registrar despesas fixas e variáveis de maneira sistemática;
-> - Fornecer conteúdo educativo sobre finanças pessoais, adaptado à realidade e às necessidades do público em situação de inadimplência.
+* Exibir de forma clara e precisa os valores de entrada e saída financeira, com a devida categorização de cada transação;
+* Estabelecer metas financeiras e possibilitar o acompanhamento do progresso em relação ao orçamento estipulado;
+* Registrar despesas fixas e variáveis de maneira sistemática;
+* Fornecer conteúdo educativo sobre finanças pessoais, adaptado à realidade e às necessidades do público em situação de inadimplência.
 
  
 
@@ -34,9 +34,9 @@ Essa conexão direta entre o endividamento e a insegurança alimentar ressalta a
 ## Público-Alvo
 
 O público-alvo da aplicação web são pessoas em situação de inadimplência, que buscam:
-> - Aprimorar a gestão de suas finanças, buscando um maior controle sobre seus recursos e a tomada de decisões financeiras mais conscientes;
-> - Alcançar seus objetivos financeiros, concretizando sonhos e conquistando uma melhor qualidade de vida;
-> - Reduzir o endividamento, quitando dívidas e desfrutando de uma maior tranquilidade financeira.
+* Aprimorar a gestão de suas finanças, buscando um maior controle sobre seus recursos e a tomada de decisões financeiras mais conscientes;
+* Alcançar seus objetivos financeiros, concretizando sonhos e conquistando uma melhor qualidade de vida;
+* Reduzir o endividamento, quitando dívidas e desfrutando de uma maior tranquilidade financeira.
 
 
 
