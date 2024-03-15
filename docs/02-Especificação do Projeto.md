@@ -2,9 +2,10 @@
 
 <span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+A ideia do projeto advém de um contexto de falta de controle financeiro enfrentada por diferentes personas, resultando em situações de inadimplência, dificuldades em estabelecer metas e acompanhar o progresso financeiro, além da necessidade de acesso a conteúdo educativo relevante para cada contexto específico. As personas enfrentam desafios diversos, como queda na renda, despesas médicas inesperadas, ou falta de trabalho, exigindo uma solução flexível e personalizada.
+
+Durante a fase inicial de planejamento do projeto, seguimos uma abordagem estruturada que incluiu os seguintes passos: identificação das personas mais relevantes para o escopo da aplicação, análise detalhada das necessidades e desafios dos usuários, e elaboração dos requisitos fundamentais que orientam o desenvolvimento do projeto.
 
 ## Personas
 
@@ -36,53 +37,30 @@ Ana Rodrigues tem 50 anos, é diarista e enfrenta dificuldades financeiras devid
 José da Silva tem 55 anos, é corretor de imóveis e sua renda vem das comissões das vendas de imóveis (recebe um percentual quando consegue concretizar o negócio). José acumula dívidas e empréstimos, pois não consegue se organizar em virtude da imprevisibilidade inerente à sua fonte de renda.
 
 
-
-<!-- Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
-
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja. -->
-
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|João Oliveira       | Visualizar de forma clara e precisa os valores das minhas dívidas, categorizando cada uma delas, para entender melhor minha situação financeira.    | Não esquecer de fazê-las
-|João Oliveira       | Adicionar novas dívidas à minha lista, informando o valor, o motivo e a data de vencimento, para manter meu registro financeiro atualizado.         | Não esquecer de fazê-las               |
-|João Oliveira       | Marcar algumas dívidas como prioritárias, para que a aplicação me ajude a priorizá-las no plano de pagamento.| Não esquecer de fazê-las               |
-|Maria Oliveira      | Estabelecer metas financeiras realistas e acompanhar meu progresso em relação ao orçamento estipulado, para me ajudar a sair da situação de inadimplência.  | Não esquecer de fazê-las               |
-|Maria Oliveira      | Um gráfico ou relatório visual que mostre meu progresso em relação às metas financeiras estabelecidas, para me manter motivada a seguir o plano.           | Não esquecer de fazê-las               |
-|Pedro Souza         | Registrar minhas despesas fixas e variáveis de maneira sistemática, para ter um controle mais efetivo sobre meus gastos e evitar o agravamento das dívidas.           | Não esquecer de fazê-las               |
-|Pedro Souza         | Categorizar minhas despesas por tipo (alimentação, transporte, moradia, etc.) para identificar onde estou gastando mais e tomar medidas para reduzir esses gastos.           | Não esquecer de fazê-las               |
-|Pedro Souza         | Ter a opção de cadastrar múltiplas fontes de renda na aplicação, para ter uma visão abrangente de todas as minhas receitas mensais.                 | Permitir que possam administrar contas |
-|Pedro Souza         | Um histórico de transações que me permita revisar todas as movimentações financeiras realizadas, para garantir que nada tenha passado despercebido.                 | Permitir que possam administrar contas |
-|Pedro Souza         | Ter conhecimento para avaliar se é melhor financiar um carro mais novo ou vender o atual e alugar um carro.                | Permitir que possam administrar contas |
-|Laura Santos        | Receber conteúdo educativo sobre finanças pessoais adaptado à minha realidade, especialmente sobre como lidar com despesas médicas, para me ajudar a gerenciar melhor os meus recursos financeiros.      | Permitir que possam administrar contas |
-|Laura Santos        | Espaço onde possa armazenar e acessar facilmente documentos importantes relacionados às minhas despesas médicas, como recibos e notas fiscais.     | Permitir que possam administrar contas |
-|Ana Rodrigues       | Acessar recursos educativos sobre finanças pessoais e receber dicas personalizadas para melhorar minha situação financeira, levando em consideração minha profissão e renda variável.     | Permitir que possam administrar contas |
-|Ana Rodrigues       | Ter a opção de acessar um glossário de termos financeiros para entender melhor os conceitos apresentados na aplicação.     | Permitir que possam administrar contas |
-|José da Silva       | Acessar conteúdo educacional sobre como organizar minhas finanças pessoais com essa característica de entradas irregulares    | Permitir que possam administrar contas |
-|José da Silva       | Ser capaz de organizar gastos maiores (compras de itens para a casa, troca de carro, etc.) sem recorrer a empréstimos bancários ou crédito rotativo do cartão de crédito    | Permitir que possam administrar contas |
-|José da Silva       | negociar as minhas dívidas de forma a minimizar a o dinheiro gasto com juros    | Permitir que possam administrar contas |
+|João Oliveira       | Visualizar de forma clara e precisa os valores das minhas dívidas, categorizando cada uma delas. | Entender melhor minha situação financeira.
+|João Oliveira       | Adicionar novas dívidas à minha lista, informando o valor, o motivo e a data de vencimento.     | Manter meu registro financeiro atualizado. |
+|João Oliveira       | Marcar algumas dívidas como prioritárias | Para que a aplicação me ajude a priorizá-las no plano de pagamento.  |
+|Maria Oliveira      | Estabelecer metas financeiras realistas e acompanhar meu progresso em relação ao orçamento estipulado. | Ajudar a sair da situação de inadimplência. |
+|Maria Oliveira      | Um gráfico ou relatório visual que mostre meu progresso em relação às metas financeiras estabelecidas. | Para me manter motivada a seguir o plano. |
+|Pedro Souza         | Registrar minhas despesas fixas e variáveis de maneira sistemática. | Ter um controle mais efetivo sobre meus gastos e evitar o agravamento das dívidas. |
+|Pedro Souza         | Categorizar minhas despesas por tipo (alimentação, transporte, moradia, etc.). | Identificar onde estou gastando mais e tomar medidas para reduzir esses gastos. |
+|Pedro Souza         | Ter a opção de cadastrar múltiplas fontes de renda na aplicação | Ter uma visão abrangente de todas as minhas receitas mensais. |
+|Pedro Souza         | Um histórico de transações que me permita revisar todas as movimentações financeiras realizadas. | Garantir que nada tenha passado despercebido. |
+|Pedro Souza         | Ter conhecimento para avaliar se é melhor financiar um carro mais novo ou vender o atual e alugar um carro. | Tomar uma decisão financeira mais responsável |
+|Laura Santos        | Receber conteúdo educativo sobre finanças pessoais adaptado à minha realidade, especialmente sobre como lidar com despesas médicas | Para me ajudar a gerenciar melhor os meus recursos financeiros. |
+|Laura Santos        | Espaço onde possa armazenar e acessar facilmente documentos importantes relacionados às minhas despesas médicas, como recibos e notas fiscais.  | Oragnizar minhas despesas de forma prática |
+|Ana Rodrigues       | Acessar recursos educativos sobre finanças pessoais e receber dicas personalizadas para melhorar minha situação financeira, levando em consideração minha profissão e renda variável.     | Aprender sobre educação financeira e aplicar na minha realidade. |
+|Ana Rodrigues       | Ter a opção de acessar um glossário de termos financeiros para entender melhor os conceitos apresentados na aplicação.     | Para ter maior conhecimento e autonomia na gestão de minhas finanças. |
+|José da Silva       | Acessar conteúdo educacional sobre como organizar minhas finanças pessoais com essa característica de entradas irregulares.    | Aprender sobre educação financeira e organizar melhor minhas finanças. |
+|José da Silva       | Ser capaz de organizar gastos maiores (compras de itens para a casa, troca de carro, etc.) sem recorrer a empréstimos bancários ou crédito rotativo do cartão de crédito    | Evitar entrar em situação de inadimplência. |
+|José da Silva       | Negociar as minhas dívidas de forma     | Minimizar a o dinheiro gasto com juros |
 
-
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Requisitos
 
