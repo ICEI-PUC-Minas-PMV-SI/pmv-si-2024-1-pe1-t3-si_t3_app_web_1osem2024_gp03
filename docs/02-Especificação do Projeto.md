@@ -91,23 +91,13 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA |
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA |
+|RNF-001| A interface da aplicação deve ser intuitiva e de fácil utilização, considerando o público-alvo, que pode ter diferentes níveis de familiaridade com a tecnologia. | ALTA |
+|RNF-002| A aplicação deve garantir a segurança dos dados dos usuários, implementando medidas como criptografia e autenticação robusta. |  ALTA |
+|RNF-003| A aplicação deve estar disponível de forma consistente, com tempo de inatividade mínimo para garantir que os usuários possam acessá-la sempre que necessário. |  ALTA |
+|RNF-004| A aplicação deve ser compatível com uma variedade de dispositivos e navegadores web, para garantir que os usuários possam acessá-la em diferentes plataformas. |  ALTA |
+|RNF-005| A aplicação deve ser acessível para pessoas com deficiência, seguindo as diretrizes de acessibilidade web.|  ALTA |
+|RNF-006| A aplicação deve ser facilmente atualizável e requer manutenção mínima para garantir que esteja sempre atualizada e funcional. |  MÉDIA |
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
