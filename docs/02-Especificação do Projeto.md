@@ -102,10 +102,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
 |02| Não pode ser desenvolvido um módulo de backend        |
-
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+|03| A interface da aplicação deve ser intuitiva para usuários com diferentes níveis de habilidade técnica.        |
+|04| Deve ser implementada criptografia e autenticação robusta para garantir a segurança dos dados dos usuários.        |
+|05| O tempo de inatividade da aplicação deve ser mantido mínimo para garantir acesso consistente.        |
+|06| A aplicação deve ser compatível com uma variedade de dispositivos e navegadores web.        |
+|07| A aplicação deve seguir as diretrizes de acessibilidade web para garantir acessibilidade para pessoas com deficiência.        |
