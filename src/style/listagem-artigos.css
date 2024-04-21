@@ -1,0 +1,51 @@
+::-webkit-scrollbar {
+  width: 9px;
+  background-color: #9b9b9b;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bdbdbd;
+  border-radius: 5px;
+}
+
+scrollbar {
+  width: 9px;
+  background-color: #9b9b9b;
+  border-radius: 5px;
+}
+
+scrollbar-thumb {
+  background-color: #bdbdbd;
+  border-radius: 5px;
+}
+main {
+  overflow-y: scroll;
+  height: 65vh;
+  overflow-x: hidden;
+}
+main .card:nth-last-child(-n + 1) {
+  /* margin-right: 800px; */
+}
+main .card {
+  width: 345px;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1115px) {
+  main .card {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  main .card {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .card {
+    width: 300px;
+  }
+}
