@@ -24,9 +24,9 @@ main {
   height: 65vh;
   overflow-x: hidden;
 }
-main .card:nth-last-child(-n + 1) {
-  /* margin-right: 800px; */
-}
+/* main .card:nth-last-child(-n + 1) {
+  margin-right: 800px;
+} */
 main .card {
   width: 345px;
   margin-top: 40px;
