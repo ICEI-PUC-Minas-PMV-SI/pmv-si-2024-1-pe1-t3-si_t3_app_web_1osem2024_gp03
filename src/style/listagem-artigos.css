@@ -21,14 +21,18 @@ scrollbar-thumb {
 }
 main {
   overflow-y: scroll;
-  height: 65vh;
+  height: 75vh;
   overflow-x: hidden;
 }
 main .card {
-  width: 345px;
+  width: 365px;
   margin-top: 40px;
 }
-
+@media screen and (max-width: 1305px) {
+  main .card {
+    width: 280px;
+  }
+}
 @media screen and (max-width: 1115px) {
   main .card {
     width: 250px;
@@ -37,7 +41,7 @@ main .card {
 
 @media screen and (max-width: 775px) {
   main .card {
-    width: 200px;
+    width: 180px;
   }
 }
 
