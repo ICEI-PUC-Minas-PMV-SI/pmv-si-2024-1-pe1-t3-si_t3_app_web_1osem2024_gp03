@@ -1,0 +1,58 @@
+html {
+  height: 100vh;
+}
+.metas-barras__srcoll {
+  margin-top: 60px;
+  overflow-y: auto;
+  height: 300px;
+}
+
+.data {
+  background-color: #f2f2f2f2;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  background-color: #9b9b9b;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bdbdbd;
+  border-radius: 5px;
+}
+
+scrollbar {
+  width: 9px;
+  background-color: #9b9b9b;
+  border-radius: 5px;
+}
+
+scrollbar-thumb {
+  background-color: #bdbdbd;
+  border-radius: 5px;
+}
+
+.dataLimite {
+  font-size: 0.75rem;
+}
+
+.progress-bar {
+  background-color: #61af93;
+}
+
+.progress {
+  height: 25px;
+}
+
+.trash:hover {
+  color: rgb(182, 182, 182);
+  cursor: pointer;
+}
+
+@media screen and (max-height: 600px) {
+  .metas-barras__srcoll {
+    margin-top: 15px;
+    height: 100px;
+  }
+}
