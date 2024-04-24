@@ -50,13 +50,19 @@ scrollbar-thumb {
   cursor: pointer;
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 600px) and (max-width: 1400px) {
   .metas-barras__srcoll {
     margin-top: 15px;
-    height: 100px;
+    height: 150px;
   }
 }
-
+@media screen and (max-width: 600px) {
+  .metas-barras__srcoll {
+    overflow-y: initial;
+    height: auto;
+    margin-bottom: 30px;
+  }
+}
 input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -64,4 +70,7 @@ input[type='number']::-webkit-outer-spin-button {
 }
 input[type='number'] {
   -moz-appearance: textfield;
+}
+.progressBar .metaNome {
+  width: 110px;
 }
