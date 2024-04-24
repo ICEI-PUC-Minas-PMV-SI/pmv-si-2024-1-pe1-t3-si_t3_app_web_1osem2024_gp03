@@ -32,7 +32,7 @@
             </div>
             <input
               type="number"
-              class="form-control"
+              class="form-control focus-ring focus-ring-success py-1 px-2 text-decoration-none border rounded-2"
               placeholder="1.000,00"
               aria-label="meta"
               aria-describedby="basic-addon1"
@@ -42,18 +42,26 @@
             Data limite (opcional):
             <input
               type="date"
-              class="form-control w-50 ms-1"
+              class="focus-ring focus-ring-success py-1 px-2 text-decoration-none border rounded-2 form-control w-25 ms-1"
               aria-label="data limite"
               aria-describedby="basic-addon2"
             />
           </div>
           <div class="d-flex align-items-center mb-4">
             <label class="me-1" for="Título">Título:</label>
-            <input type="text" class="form-control" />
+            <input
+              type="text"
+              class="form-control focus-ring focus-ring-success py-1 px-2 text-decoration-none border rounded-2"
+            />
           </div>
           <div class="d-flex justify-content-center">
-            <button class="btn btn-outline-success me-2">Limpar</button
-            ><button class="btn btn-success">Criar Meta</button>
+            <button
+              class="btn btn-outline-success me-2 focus-ring focus-ring-success"
+            >
+              Limpar</button
+            ><button class="btn btn-success focus-ring focus-ring-success">
+              Criar Meta
+            </button>
           </div>
         </div>
         <div class="d-flex flex-column data rounded p-3 ms-5">
@@ -66,13 +74,16 @@
             </div>
             <input
               type="number"
-              class="form-control"
+              class="form-control focus-ring focus-ring-success py-1 px-2 text-decoration-none border rounded-2"
               placeholder="1.000,00"
               aria-label="Small"
               aria-describedby="inputGroup-sizing-sm"
             />
           </div>
-          <select class="form-select" aria-label="Default select example">
+          <select
+            class="form-select focus-ring focus-ring-success py-1 px-2 text-decoration-none border rounded-2"
+            aria-label="Default select example"
+          >
             <!-- as opções devem ser dinâmicas com base nas metas criadas -->
             <option value="" disabled selected>Selecione uma meta</option>
             >
@@ -80,8 +91,13 @@
           <p class="dataLimite fst-italic text-end">Data limite: 15/10/2032</p>
           <!-- Data limite da meta selecionada, deve ser dinâmico -->
           <div class="d-flex justify-content-center h-50 align-items-end">
-            <button class="btn btn-outline-success me-2">Limpar</button
-            ><button class="btn btn-success">Salvar</button>
+            <button
+              class="btn btn-outline-success me-2 focus-ring focus-ring-success"
+            >
+              Limpar</button
+            ><button class="btn btn-success focus-ring focus-ring-success">
+              Salvar
+            </button>
           </div>
         </div>
       </div>
