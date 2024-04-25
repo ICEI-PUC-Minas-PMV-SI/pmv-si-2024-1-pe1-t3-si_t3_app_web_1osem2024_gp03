@@ -50,3 +50,11 @@ main .card {
     width: 300px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  main {
+    height: auto;
+    overflow-y: initial;
+    margin-bottom: 10px;
+  }
+}
