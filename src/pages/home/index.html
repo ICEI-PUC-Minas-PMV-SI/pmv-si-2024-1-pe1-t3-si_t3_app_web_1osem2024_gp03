@@ -17,45 +17,45 @@
         <h1 class="title">Dashboard</h1>
         <div class="d-flex mt-4 mb-2 gap-3">
             <div class="card">
-                <div class="card-body">
-                    <p class="card-title">Meu Saldo</h5>
-                    <h5 class="card-text">R$ 4.270,00</p>
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <span class="card-title">Meu Saldo</span>
+                    <b class="card-text">R$ 4.270,00</b>
                 </div>
             </div>
             <div class="card">
-                <div class="card-body">
-                    <p class="card-title">Receitas</h5>
-                    <h5 class="card-text">R$ 5.520,00</p>
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <span class="card-title">Receitas</span>
+                    <b class="card-text">R$ 5.520,00</b>
                 </div>
             </div>
             <div class="card">
-                <div class="card-body">
-                    <p class="card-title">Despesas</h5>
-                    <h5 class="card-text">R$ 1.250,00</p>
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <span class="card-title">Despesas</span>
+                    <b class="card-text">R$ 1.250,00</b>
                 </div>
             </div>
             <div class="card">
-                <div class="card-body">
-                    <p class="card-title">Cartão de crédito</h5>
-                    <h5 class="card-text">R$ 0,00</p>
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <span class="card-title">Cartão de crédito</span>
+                    <b class="card-text">R$ 0,00</b>
                 </div>
             </div>
         </div>
 
-        <div class="d-flex mt-4 mb-3 gap-4">
-            <div class="d-flex flex-column">
-                <h6 class="card-title">Despesas por categoria</p>
-                <div class="card mb-3" style="width: 34rem;">
+        <div class=" d-flex mt-4 mb-3 gap-4">
+            <div class="d-flex flex-column medium gap-2">
+                <h6 class="card-title">Despesas por categoria</h6>
+                <div class="card mb-3 ">
                     <div class="card-body text-center">
                         <img src="/src/assets/grafico.png" alt="" srcset="">
                     </div>
                 </div>
             </div>
 
-            <div class="d-flex flex-column">
-                <h6 class="card-title">Transações</p>
-                <div class="card mb-3" style="width: 34rem;">
-                    <div class="card-body text-center">
+            <div class="d-flex flex-column medium gap-2">
+                <h6 class="card-title">Transações</h6>
+                <div class="card mb-3">
+                    <div class="card-body text-center table-card">
                         <table class="table mb-5">
                             <tbody>
                                 <tr class="transaction-row">
@@ -67,7 +67,7 @@
                                 <tr class="transaction-row">
                                     <td><i class="category-ball smooth-green"></i></td>
                                     <td>iPhone 13 128GB</td>
-                                    <td>-07 Mar 2024</td>
+                                    <td>07 Mar 2024</td>
                                     <td>-R$549,99 (3/10)</td>
                                 </tr>
                                 <tr class="transaction-row">
@@ -84,8 +84,36 @@
             </div>
         </div>
 
-
+        <div class="d-flex mt-1 mb-3 justify-content-center">
+            <div class="d-flex flex-column large gap-2">
+                <h6 class="card-title">Metas</h6>
+                <div class="card mb-3">
+                    <div class="card-body text-center metas-card">
+                        <div class="progress-wrapper">
+                            <span class="meta-title">Cozinha móveis planejados</span>
+                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 30%"></div>
+                                <span class="percentage">30%</span>
+                            </div>
+                        </div>
+                        <div class="progress-wrapper">
+                            <span class="meta-title">Carro financiamento</span>
+                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 15%"></div>
+                                <span class="percentage">15%</span>
+                            </div>
+                        </div>
+                        <div class="progress-wrapper">
+                            <span class="meta-title">Apartamento novo</span>
+                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 38%"></div>
+                                <span class="percentage">38%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
 </body>
 </html>

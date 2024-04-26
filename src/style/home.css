@@ -5,34 +5,39 @@
 .container-md {
     font-family: "Montserrat", sans-serif;
 }
+
 .card {
-    --bs-card-bg: #F2F2F2;
-    --bs-card-cap-bg: #000;
+    background-color: #F2F2F2;
+    color: #000;
     border: none;
-    width: 280px;
-    /* height: 110px; */
-    --bs-border-radius: 13px;
+    flex: 1;
+    border-radius: 12px;
 }
 
-
 .card-title {
-    --bs-card-title-color: #AEAEB2;
+    color: #AEAEB2;
     font-weight: 500;
     font-size: 1.125rem;
 }
 
 .card-text {
-    --bs-card-text-color: #3C3C3C;
+    color: #3C3C3C;
     font-size: 1.75rem;
     font-weight: 600;
 }
 
-.link {
-    font-weight: 600;
+
+.medium {
+    flex: 1;
+}
+
+.table-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .transaction-row {
-    background-color: var(--bs-card-bg);
     width: 100%;
     --bs-table-bg: #F2F2F2;
     --bs-border-bottom-width: 0px;
@@ -42,18 +47,13 @@
         font-weight: 400;
         color: #858585;
     }
-
 }
-
-
 
 .category-ball {
     width: 18px;
     height: 18px;
     border-radius: 50%;
     display: inline-block;
-    margin-right: 5px;
-    content: "";
 }
 
 .category-ball.green {
@@ -67,3 +67,47 @@
 .category-ball.orange {
     background-color: #FF7F0A;
 }
+
+.link {
+    font-weight: 600;
+}
+
+.large {
+    width: 90%;
+}
+
+.metas-card {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.progress-wrapper {
+    display: flex;
+    gap: 1rem;
+}
+
+.meta-title {
+    width: 300px;
+    color: #858585;
+}
+
+.progress {
+    width: 100%;
+    height: 25px;
+    position: relative;
+}
+
+.progress-bar {
+    background-color: #61AF93;
+}
+
+.percentage {
+    position: absolute;
+    font-weight: 600;
+    left: 50%;
+    top: 4px;
+}
+
