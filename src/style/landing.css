@@ -1,15 +1,49 @@
+body{
+  margin:0px;
+  padding: 0px;
+}
+
+.container{
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
 .image {
-  display:flex;
-  width: 50%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.text {
+  align-self: center;
 }
 .title {
   font-family: "Montserrat", sans-serif;
+  color: #244A12;
+  font-weight: bold;
+  font-size: 34px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+.title2 {
+  font-family: "Montserrat", sans-serif;
+  color: #244A12;
+  font-weight: bold;
+  font-size: 48px;
+  margin-top: 0px;
+  padding: 0px;
 }
 
 .subtitle {
   font-family: "Montserrat", sans-serif;
+  font-weight:400;
+  color: #AEAEB2;
+  font-size: 28px;
 }
 
 .button {
-  font-family: "Montserrat", sans-serif;
+  color: #80AF61;
+  background-color: #80AF61;
+  width: 250px;
+  height:32px;
 }
