@@ -1,0 +1,15 @@
+.image {
+  display:flex;
+  width: 50%;
+}
+.title {
+  font-family: "Montserrat", sans-serif;
+}
+
+.subtitle {
+  font-family: "Montserrat", sans-serif;
+}
+
+.button {
+  font-family: "Montserrat", sans-serif;
+}
