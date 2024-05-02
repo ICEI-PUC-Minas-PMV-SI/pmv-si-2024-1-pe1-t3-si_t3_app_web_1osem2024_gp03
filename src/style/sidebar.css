@@ -1,12 +1,14 @@
 .menu-sidebar {
- width:65px;
+ width:5%;
  height:100%;
  top:0;
  left:0;
  bottom:0;
  background:#80AF61;;
  position:absolute;
- -webkit-transition:width .04s linear;
- transition:width .04s linear;
  z-index:1000;
+}
+.bi {
+  color:#628A4C;
+  margin: 5px
 }
