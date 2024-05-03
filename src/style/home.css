@@ -6,12 +6,41 @@
     font-family: "Montserrat", sans-serif;
 }
 
+
+.summary-container {
+    display: flex;
+    margin: 2rem 0 3rem;
+    gap: 1rem;
+
+    @media (max-width: 700px) {
+        flex-direction: column;
+        gap: 0.5rem;
+
+        > *:not(:first-child) {
+            display: none;
+        }
+    }
+}
+
+.expenses-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 1rem;
+    gap: 1rem;
+
+    @media (max-width: 700px) {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
 .card {
     background-color: #F2F2F2;
     color: #000;
     border: none;
     flex: 1;
     border-radius: 12px;
+
 }
 
 .card-title {
@@ -35,17 +64,22 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    @media (max-width: 700px) {
+        padding: 0.5rem;
+    }
 }
 
 .transaction-row {
-    width: 100%;
     --bs-table-bg: #F2F2F2;
     --bs-border-bottom-width: 0px;
+    width: 100%;
 
     td {
         font-size: 1rem;
         font-weight: 400;
         color: #858585;
+        vertical-align: middle;
     }
 }
 
@@ -54,6 +88,14 @@
     height: 18px;
     border-radius: 50%;
     display: inline-block;
+    vertical-align: middle;
+
+    @media (max-width: 700px) {
+        vertical-align: bottom;
+        width: 36px;
+        height: 36px;
+        border-radius: unset;
+    }
 }
 
 .category-ball.green {
@@ -74,6 +116,10 @@
 
 .large {
     width: 90%;
+
+    @media (max-width: 700px) {
+        width: 100%;
+    }
 }
 
 .metas-card {
@@ -82,15 +128,23 @@
     flex-direction: column;
     justify-content: space-around;
     gap: 3rem;
+
+    @media (max-width: 700px) {
+        padding: 1.5rem;
+    }
 }
 
 .progress-wrapper {
     display: flex;
     gap: 1rem;
+
+    @media (max-width: 700px) {
+        flex-direction: column;
+    }
 }
 
 .meta-title {
-    width: 300px;
+    min-width: 300px;
     color: #858585;
 }
 
@@ -107,7 +161,10 @@
 .percentage {
     position: absolute;
     font-weight: 600;
+    top: 50%;
     left: 50%;
-    top: 4px;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    width: fit-content;
 }
 
