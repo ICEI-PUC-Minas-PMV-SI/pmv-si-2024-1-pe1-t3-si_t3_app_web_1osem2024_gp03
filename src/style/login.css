@@ -33,6 +33,7 @@ body{
   margin-bottom: 0px;
   padding: 0px;
 }
+
 .title2 {
   font-family: "Montserrat", sans-serif;
   color: #244A12;
@@ -42,8 +43,30 @@ body{
   padding: 0px;
 }
 
+#landing-login {
+  background-image: url('../assets/Landing.jpg');
+  background-size: 100%;
+  height: 100vh;
+}
 
+.btn-action {
+  background-color: #80AF61;
+  border-color: #80AF61;
+}
 
-button{
-  color:#80AF61;
+/* Modificando a cor do texto do botão de sucesso */
+.btn-action:hover,
+.btn-action:focus {
+  background-color: #6b964d; /* Uma tonalidade ligeiramente mais escura quando o botão é hover ou focado */
+  border-color: #6b964d;
+}
+
+.custom-link {
+  color: #80AF61; /* Cor fixa do link */
+  font-weight: bold; /* Negrito */
+  text-decoration: none; /* Remover decoração padrão do link */
+}
+
+.custom-link:hover {
+  color: #6b964d; /* Mudança de cor ao passar o mouse */
 }
