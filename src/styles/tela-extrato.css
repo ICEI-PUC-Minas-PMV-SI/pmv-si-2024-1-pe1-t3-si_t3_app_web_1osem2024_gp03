@@ -1,0 +1,36 @@
+.category-ball {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    content: "";
+}
+.category-ball.green {
+    background-color: #48C9B0;
+}
+
+.borda{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.category-ball.blue{
+    background-color: #3374FF ;
+}
+
+.category-ball.brown {
+    background-color: #7E5109 ;
+}
+
+.category-ball.yellow{
+    background-color: #F4D03F ;
+} 
+
+.category-ball.pink{
+    background-color: #E6B0AA  ;
+}
+
+.category-ball.orange{
+    background-color: #F39C12 ;
+}
