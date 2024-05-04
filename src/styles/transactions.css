@@ -1,0 +1,20 @@
+.card-custom {
+    background-color: #f4f4f4;
+}
+
+.card-header-custom {
+    border-bottom: none !important;
+    font-size: large;
+    font-weight: bold;
+    background-color: transparent !important;
+}
+
+.card-footer-custom {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.btn-clean-custom {
+    border: 1px solid #208454 !important;
+    color: #208454;
+}
