@@ -1,0 +1,37 @@
+.recuo { text-indent:4em }
+
+.column {
+
+position:absolute;
+
+}
+
+.tag{
+
+position:relative;
+
+bottom: 65px;
+
+left: 5px;
+
+color: white;
+
+}
+
+span{
+
+color: white;
+    
+}
+
+.title{
+    
+    position:relative;
+
+    bottom: 70px;
+
+    left: 5px;
+
+}
+
+h4{color: white; text-shadow: black 0.1em 0.1em 0.2em}
