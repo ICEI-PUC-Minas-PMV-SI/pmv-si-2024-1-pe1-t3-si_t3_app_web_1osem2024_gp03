@@ -1,7 +1,7 @@
 html {
   height: 100vh;
 }
-.metas-barras__srcoll {
+.goals-scrollBars {
   margin-top: 60px;
   overflow-y: auto;
   height: 300px;
@@ -33,7 +33,7 @@ scrollbar-thumb {
   border-radius: 5px;
 }
 
-.dataLimite {
+.dateLimit {
   font-size: 0.75rem;
 }
 
@@ -51,13 +51,13 @@ scrollbar-thumb {
 }
 
 @media screen and (max-height: 600px) and (max-width: 1400px) {
-  .metas-barras__srcoll {
+  .goals-scrollBars {
     margin-top: 15px;
     height: 150px;
   }
 }
 @media screen and (max-width: 600px) {
-  .metas-barras__srcoll {
+  .goals-scrollBars {
     overflow-y: initial;
     height: auto;
     margin-bottom: 30px;
@@ -71,6 +71,6 @@ input[type='number']::-webkit-outer-spin-button {
 input[type='number'] {
   -moz-appearance: textfield;
 }
-.progressBar .metaNome {
+.progressBar .goalName {
   width: 110px;
 }
