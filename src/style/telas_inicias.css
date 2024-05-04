@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1000;
+}
+
+.div-right {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.text {
+  align-self: center;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.fill-space {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.form-control:focus {
+  border-color: #80AF61;
+  box-shadow: 0 0 0 0.25rem #b6c0af;
+}
+
+.slogan {
+  font-size: 26px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+.btn-action {
+  color: #F2F2F2;
+  background-color: #80AF61;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  padding: 12px 0px;
+  border-radius: 14px;
+  box-shadow: 0px 2px 4px #999999;
+}
+
+.btn-action:hover {
+  color: #F2F2F2;
+  background-color: #567541;
+}
+
+.cadastre-aqui-text {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.link-telas-iniciais {
+  text-decoration: dashed;
+  font-weight: bold;
+  color: #567541;
+}
