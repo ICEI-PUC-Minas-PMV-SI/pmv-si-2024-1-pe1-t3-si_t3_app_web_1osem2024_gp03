@@ -1,15 +1,18 @@
 # Programação de Funcionalidades
-
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="5-Arquitetura da Solução.md"> Arquitetura da Solução</a>
-
-Implementação do sistema descritas por meio dos requisitos funcionais e/ou não funcionais. Deve relacionar os requisitos atendidos os artefatos criados (código fonte) além das estruturas de dados utilizadas e as instruções para acesso e verificação da implementação que deve estar funcional no ambiente de hospedagem.
-
-Para cada requisito funcional, pode ser entregue um artefato desse tipo
-
-> **Links Úteis**:
->
-> - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
-> - [JSON Tutorial](https://www.w3resource.com/JSON)
-> - [JSON Data Set Sample](https://opensource.adobe.com/Spry/samples/data_region/JSONDataSetSample.html)
-> - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
-> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
+## Requisitos atendidos
+| ID     | Descrição do Requisito| Prioridade | Artefato Criado|
+|--------|-----------|------------|--------------------------|
+|RF-001| O sistema deve permitir que o usuário registre suas dívidas, incluindo valor, motivo e data de vencimento. | ALTA | transactions.html
+|RF-002| Deve ser possível categorizar cada dívida para uma melhor organização financeira.   | ALTA | transactions.html
+|RF-003| O usuário deve poder visualizar de forma clara e precisa o valor total de suas dívidas, bem como uma lista detalhada de cada uma delas.   | ALTA | dashboard.html / tela-extrato.html
+|RF-004| O usuário deve poder registrar suas despesas fixas e variáveis de maneira sistemática.   | ALTA | transactions.html
+|RF-005| Deve ser possível categorizar as despesas por tipo (alimentação, transporte, moradia, etc.).   | ALTA | transactions.html
+|RF-006| Os usuários devem ter a opção de cadastrar múltiplas fontes de renda na aplicação.   | ALTA | transactions.html
+|RF-007| A aplicação deve fornecer conteúdo educativo sobre finanças pessoais.   | ALTA | listagem-artigos.html / artigo-item.html
+|RF-009| Os usuários devem ter acesso a um histórico de transações que lhes permita revisar todas as movimentações financeiras realizadas.   | ALTA | tela-extrato.html
+|RF-010| A aplicação deve permitir que os usuários estabeleçam metas financeiras realistas e acompanhem seu progresso em relação ao orçamento estipulado.   | MÉDIA | dashboard.html / metas.html
+|RF-011| Deve haver opção para priorizar algumas dívidas, destacando-as na interface.   | MÉDIA |
+|RF-012| Deve ser possível armazenar e acessar facilmente documentos importantes relacionados às despesas, como recibos e notas fiscais.   | MÉDIA |
+|RF-013| Deve haver um gráfico ou relatório visual que mostre o progresso em relação às metas financeiras estabelecidas.   | MÉDIA |  dashboard.html / metas.html
+|RF-014| A aplicação deve fornecer ferramentas para ajudar os usuários a avaliar alternativas financeiras, como financiamento de um carro novo versus reparos no carro atual.   | MÉDIA | N/A
+|RF-015| Deve haver recursos para auxiliar os usuários na negociação de suas dívidas, visando minimizar os gastos com juros.   | MÉDIA |
