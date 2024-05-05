@@ -1,0 +1,60 @@
+::-webkit-scrollbar {
+  width: 9px;
+  background-color: #9b9b9b;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bdbdbd;
+  border-radius: 5px;
+}
+
+scrollbar {
+  width: 9px;
+  background-color: #9b9b9b;
+  border-radius: 5px;
+}
+
+scrollbar-thumb {
+  background-color: #bdbdbd;
+  border-radius: 5px;
+}
+main {
+  overflow-y: scroll;
+  height: 75vh;
+  overflow-x: hidden;
+}
+main .card {
+  width: 365px;
+  margin-top: 40px;
+}
+@media screen and (max-width: 1305px) {
+  main .card {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 1115px) {
+  main .card {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  main .card {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .card {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    height: auto;
+    overflow-y: initial;
+    margin-bottom: 10px;
+  }
+}
