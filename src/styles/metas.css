@@ -1,0 +1,76 @@
+html {
+  height: 100vh;
+}
+.goals-scrollBars {
+  margin-top: 60px;
+  overflow-y: auto;
+  height: 300px;
+}
+
+.data {
+  background-color: #f2f2f2f2;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  background-color: #9b9b9b;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bdbdbd;
+  border-radius: 5px;
+}
+
+scrollbar {
+  width: 9px;
+  background-color: #9b9b9b;
+  border-radius: 5px;
+}
+
+scrollbar-thumb {
+  background-color: #bdbdbd;
+  border-radius: 5px;
+}
+
+.dateLimit {
+  font-size: 0.75rem;
+}
+
+.progress-bar {
+  background-color: #61af93;
+}
+
+.progress {
+  height: 25px;
+}
+
+.trash:hover {
+  color: rgb(182, 182, 182);
+  cursor: pointer;
+}
+
+@media screen and (max-height: 600px) and (max-width: 1400px) {
+  .goals-scrollBars {
+    margin-top: 15px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .goals-scrollBars {
+    overflow-y: initial;
+    height: auto;
+    margin-bottom: 30px;
+  }
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+.progressBar .goalName {
+  width: 110px;
+}
