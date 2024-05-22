@@ -1,11 +1,10 @@
-import { getData, hashPassword } from './utils.js';
+import { getData, hashPassword,toastHandle } from './utils.js';
 
-const login = async (e) => {
+const login = async () => {
   let inputEmail = document.querySelector('#exampleInputEmail1').value;
   let inputPassword = document.querySelector('#exampleInputPassword1').value;
 
-  const { password } = JSON.parse(getData(inputEmail));
-  console.log(password);
+  const password = JSON.parse(getData(inputEmail))?.password;
   if (!password) return false;
 
   const hashedInput = await hashPassword(inputPassword);
@@ -14,5 +13,11 @@ const login = async (e) => {
   window.open('dashboard.html', '_self');
 };
 
+const callback = async (e) => {
+  e.preventDefault();
+  const message = await login();
+  if (!message) toastHandle('Email ou senha incorreto.');
+};
+
 const loginBtn = document.querySelector('.login-btn');
-loginBtn.addEventListener('click', login);
+loginBtn.addEventListener('click', callback);
