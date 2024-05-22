@@ -9,11 +9,7 @@ export const setData = (key, value) => {
   localStorage.setItem(key, value);
 };
 
-export const comparePassword = async (password, hash) => {
-  return await bcrypt.compare(password, hash);
-};
-
-export const hashPasswordd = async (password) => {
+export const hashPassword = async (password) => {
   const encoder = new TextEncoder();
   const data = encoder.encode(password);
   const hash = await crypto.subtle.digest('SHA-256', data);
