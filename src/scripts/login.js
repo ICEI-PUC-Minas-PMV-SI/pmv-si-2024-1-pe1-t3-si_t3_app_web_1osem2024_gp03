@@ -1,4 +1,9 @@
-import { getData, hashPassword,toastHandle } from './utils.js';
+import { getData, hashPassword, setData, toastHandle } from './utils.js';
+
+if (getData('registered') === 'true') {
+  toastHandle('Cadastro realizado com sucesso.');
+  setData('registered', false);
+}
 
 const login = async () => {
   let inputEmail = document.querySelector('#exampleInputEmail1').value;
