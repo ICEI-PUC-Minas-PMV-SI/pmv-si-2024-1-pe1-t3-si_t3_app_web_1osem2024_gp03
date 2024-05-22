@@ -1,6 +1,3 @@
-// const bcrypt = require('bcrypt');
-// import bcrypt from 'bcrypt';
-
 export const getData = (key) => {
   return localStorage.getItem(key);
 };
