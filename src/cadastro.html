@@ -35,10 +35,14 @@
 
           <form class="w-75">
             <div class="mb-3">
-              <input type="text" class="form-control" placeholder="Nome" />
+              <input type="text" class="form-control name" placeholder="Nome" />
             </div>
             <div class="mb-3">
-              <input type="text" class="form-control" placeholder="Sobrenome" />
+              <input
+                type="text"
+                class="form-control lastname"
+                placeholder="Sobrenome"
+              />
             </div>
             <div class="mb-3">
               <input
@@ -61,12 +65,15 @@
               <input
                 type="password"
                 class="form-control"
-                id="exampleInputPassword1"
+                id="exampleInputPassword1Confirm"
                 placeholder="Confirmar senha"
               />
             </div>
             <div class="d-grid gap-2 mt-3">
-              <a class="btn btn-action" href="../src/login.html" type="button"
+              <a
+                class="btn btn-action register-btn"
+                href="../src/login.html"
+                type="button"
                 >Cadastrar</a
               >
             </div>
@@ -80,5 +87,6 @@
         </div>
       </div>
     </div>
+    <script type="module" src="./scripts/register.js"></script>
   </body>
 </html>
