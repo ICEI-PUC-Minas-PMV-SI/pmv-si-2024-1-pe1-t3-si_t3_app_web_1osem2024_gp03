@@ -21,3 +21,12 @@ function hexString(buffer) {
   });
   return hexCodes.join('');
 }
+
+export const toastHandle = (message) => {
+  const toastTrigger = document.getElementById('liveToastBtn');
+  const toastLiveExample = document.getElementById('liveToast');
+  const toastText = document.querySelector('.toast-message');
+  toastText.innerHTML = message;
+  const toastBootstrap =
+    bootstrap.Toast.getOrCreateInstance(toastLiveExample).show();
+};
