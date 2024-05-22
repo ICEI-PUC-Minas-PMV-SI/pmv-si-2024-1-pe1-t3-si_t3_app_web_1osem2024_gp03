@@ -4,8 +4,8 @@ const login = async (e) => {
   let inputEmail = document.querySelector('#exampleInputEmail1').value;
   let inputPassword = document.querySelector('#exampleInputPassword1').value;
 
-  const password = getData(inputEmail);
-
+  const { password } = JSON.parse(getData(inputEmail));
+  console.log(password);
   if (!password) return false;
 
   const hashedInput = await hashPassword(inputPassword);
