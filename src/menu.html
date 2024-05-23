@@ -1,76 +1,117 @@
 <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="styles/menu.css">
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  />
+  <link rel="stylesheet" href="styles/menu.css" />
 </head>
 
 <div id="sidemenu-container" class="row">
-    <div class="col-2 sidebar">
-        <a href="/src/dashboard.html" class="sidebar-item dashboard">
-            <i class="material-icons">pie_chart</i>
-            <span class="sidebar-item-text">Dashboard</span>
-        </a>
-        <a href="/src/transactions.html" class="sidebar-item" id="transactions">
-            <i class="material-icons">account_balance_wallet</i>
-            <span class="sidebar-item-text">Transações</span>
-        </a>
-        <a href="/src/metas.html" class="sidebar-item" id="goals">
-            <i class="material-icons">rocket_launch</i>
-            <span class="sidebar-item-text">Metas</span>
-        </a>
-        <a href="/src/simulator.html" class="sidebar-item" id="simulator">
-            <i class="material-icons">extension</i>
-            <span class="sidebar-item-text">Simulador</span>
-        </a>
-        <a href="/src/listagem-artigos.html" class="sidebar-item" id="articles">
-            <i class="material-icons">description</i>
-            <span class="sidebar-item-text">Artigos</span>
-        </a>
-        <a href="../src/login.html" class="sidebar-item" id="login">
-            <i class="material-icons">exit_to_app</i>
-            <span class="sidebar-item-text">Logout</span>
-        </a>
-    </div>
+  <div class="col-2 sidebar">
+    <a href="/src/dashboard.html" class="sidebar-item dashboard" id="dashboard">
+      <i class="material-icons">pie_chart</i>
+      <span class="sidebar-item-text">Dashboard</span>
+    </a>
+    <a href="/src/transactions.html" class="sidebar-item" id="transactions">
+      <i class="material-icons">account_balance_wallet</i>
+      <span class="sidebar-item-text">Transações</span>
+    </a>
+    <a href="/src/metas.html" class="sidebar-item" id="goals">
+      <i class="material-icons">rocket_launch</i>
+      <span class="sidebar-item-text">Metas</span>
+    </a>
+    <a href="/src/simulator.html" class="sidebar-item" id="simulator">
+      <i class="material-icons">extension</i>
+      <span class="sidebar-item-text">Simulador</span>
+    </a>
+    <a href="/src/listagem-artigos.html" class="sidebar-item" id="articles">
+      <i class="material-icons">description</i>
+      <span class="sidebar-item-text">Artigos</span>
+    </a>
+    <a href="../src/login.html" class="sidebar-item" id="login">
+      <i class="material-icons">exit_to_app</i>
+      <span class="sidebar-item-text">Logout</span>
+    </a>
+  </div>
 
-    <div class="col-2 tablet-sidebar">
-        <a href="/src/dashboard.html" class="tablet-sidebar-item dashboard" data-title="Dashboard" id="dashboard">
-            <i class="material-icons">pie_chart</i>
-        </a>
-        <a href="/src/transactions.html" class="tablet-sidebar-item" data-title="Transações" id="transactions">
-            <i class="material-icons">account_balance_wallet</i>
-        </a>
-        <a href="/src/metas.html" class="tablet-sidebar-item" data-title="Metas" id="goals">
-            <i class="material-icons">rocket_launch</i>
-        </a>
-        <a href="/src/simulator.html" class="tablet-sidebar-item" data-title="Simulador" id="simulator">
-            <i class="material-icons">extension</i>
-        </a>
-        <a href="/src/listagem-artigos.html" class="tablet-sidebar-item" data-title="Artigos" id="articles">
-            <i class="material-icons">description</i>
-        </a>
-        <a href="../src/login.html" class="tablet-sidebar-item" data-title="Sair" id="login">
-            <i class="material-icons">exit_to_app</i>
-        </a>
-    </div>
+  <div class="col-2 tablet-sidebar">
+    <a
+      href="/src/dashboard.html"
+      class="tablet-sidebar-item dashboard sidebar-item"
+      data-title="Dashboard"
+      id="dashboard"
+    >
+      <i class="material-icons">pie_chart</i>
+    </a>
+    <a
+      href="/src/transactions.html"
+      class="tablet-sidebar-item sidebar-item"
+      data-title="Transações"
+      id="transactions"
+    >
+      <i class="material-icons">account_balance_wallet</i>
+    </a>
+    <a
+      href="/src/metas.html"
+      class="tablet-sidebar-item sidebar-item"
+      data-title="Metas"
+      id="goals"
+    >
+      <i class="material-icons">rocket_launch</i>
+    </a>
+    <a
+      href="/src/simulator.html"
+      class="tablet-sidebar-item sidebar-item"
+      data-title="Simulador"
+      id="simulator"
+    >
+      <i class="material-icons">extension</i>
+    </a>
+    <a
+      href="/src/listagem-artigos.html"
+      class="tablet-sidebar-item sidebar-item"
+      data-title="Artigos"
+      id="articles"
+    >
+      <i class="material-icons">description</i>
+    </a>
+    <a
+      href="../src/login.html"
+      class="tablet-sidebar-item sidebar-item"
+      data-title="Sair"
+      id="login"
+    >
+      <i class="material-icons">exit_to_app</i>
+    </a>
+  </div>
 </div>
 
-
 <div class="bottom-menu d-md-none">
-    <a href="/src/dashboard.html" class="bottom-menu-item dashboard" id="dashboard">
-        <i class="material-icons">pie_chart</i>
-    </a>
-    <a href="/src/transactions.html" class="bottom-menu-item" data-title="Transações" id="transactions">
-        <i class="material-icons">account_balance_wallet</i>
-    </a>
-    <a href="/src/metas.html" class="bottom-menu-item" id="goals">
-        <i class="material-icons">rocket_launch</i>
-    </a>
-    <a href="/src/simulator.html" class="bottom-menu-item" id="simulator">
-        <i class="material-icons">extension</i>
-    </a>
-    <a href="/src/listagem-artigos.html" class="bottom-menu-item" id="articles">
-        <i class="material-icons">description</i>
-    </a>
-    <a href="../src/login.html" class="bottom-menu-item" id="login">
-        <i class="material-icons">exit_to_app</i>
-    </a>
+  <a
+    href="/src/dashboard.html"
+    class="bottom-menu-item dashboard sidebar-item"
+    id="dashboard"
+  >
+    <i class="material-icons">pie_chart</i>
+  </a>
+  <a
+    href="/src/transactions.html"
+    class="bottom-menu-item sidebar-item"
+    data-title="Transações"
+    id="transactions"
+  >
+    <i class="material-icons">account_balance_wallet</i>
+  </a>
+  <a href="/src/metas.html" class="bottom-menu-item sidebar-item" id="goals">
+    <i class="material-icons">rocket_launch</i>
+  </a>
+  <a href="/src/simulator.html" class="bottom-menu-item sidebar-item" id="simulator">
+    <i class="material-icons">extension</i>
+  </a>
+  <a href="/src/listagem-artigos.html" class="bottom-menu-item sidebar-item" id="articles">
+    <i class="material-icons">description</i>
+  </a>
+  <a href="../src/login.html" class="bottom-menu-item sidebar-item" id="login">
+    <i class="material-icons">exit_to_app</i>
+  </a>
 </div>
