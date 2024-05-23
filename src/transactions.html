@@ -9,10 +9,6 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://icons.getbootstrap.com/assets/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./styles/transactions.css">
-    <script src="scripts/utils.js" ></script>
-    <script>
-        importHtmlFile("menu.html")
-    </script>
 </head>
 
 <body>
@@ -182,5 +178,9 @@
         </div>
     </div>
 </body>
-
+<script type="module" src="scripts/utils.js"></script>
+  <script type="module">
+      import { importHtmlFile } from './scripts/utils.js'
+      await importHtmlFile('menu.html')
+  </script>
 </html>

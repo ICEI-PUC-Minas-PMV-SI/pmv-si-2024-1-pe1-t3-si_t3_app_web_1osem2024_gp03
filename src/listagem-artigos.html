@@ -14,10 +14,6 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="scripts/utils.js"></script>
-    <script>
-        importHtmlFile('menu.html')
-    </script>
     <title>Lista de artigos</title>
   </head>
   <body>
@@ -195,4 +191,9 @@
       </div>
     </div>
   </body>
+  <script type="module" src="scripts/utils.js"></script>
+  <script type="module">
+      import { importHtmlFile } from './scripts/utils.js'
+      await importHtmlFile('menu.html')
+  </script>
 </html>
