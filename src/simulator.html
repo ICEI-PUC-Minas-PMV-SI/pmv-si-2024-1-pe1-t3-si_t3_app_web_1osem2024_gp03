@@ -13,7 +13,7 @@
 
 <body>
     <div class="container px-4 py-5" id="featured-3">
-        <div id="sidebar"></div>
+        <div id="sidemenu"></div>
         <h1 class="pb-2 border-bottom">Simulador</h1>
         <div class="row g-4 py-5">
             <div class="col-sm-12 col-md-6">
@@ -127,9 +127,10 @@
         </div>
     </div>
 </body>
-<script src="scripts/utils.js"></script>
-<script>
-    importHtmlFile('menu.html')
+<script type="module" src="scripts/utils.js"></script>
+<script type="module">
+    import { importHtmlFile } from './scripts/utils.js'
+    await importHtmlFile('menu.html')
 </script>
 
 </html>
