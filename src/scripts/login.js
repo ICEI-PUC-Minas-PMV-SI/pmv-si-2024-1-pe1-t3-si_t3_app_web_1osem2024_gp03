@@ -15,6 +15,8 @@ const login = async () => {
   const hashedInput = await hashPassword(inputPassword);
   if (hashedInput !== password) return false;
 
+  setData('user', inputEmail);
+  setData('menuActive', 'dashboard');
   window.open('dashboard.html', '_self');
 };
 
