@@ -56,11 +56,9 @@ setTimeout(menu, 1000);
 
 export const menuActive = () => {
   const menuActive = getData('menuActive');
-  console.log(menuActive);
   if (!menuActive) return;
   const menuBtns = SelectAllBtn();
   menuBtns.forEach((btn) => {
-    console.log(btn.id);
     btn.classList.remove('active');
   });
   const activeBtn = document.querySelectorAll(`#${menuActive}`);
