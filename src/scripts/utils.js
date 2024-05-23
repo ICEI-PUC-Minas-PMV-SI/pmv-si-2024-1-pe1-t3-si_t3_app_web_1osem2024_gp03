@@ -40,7 +40,7 @@ export const toastHandle = (message) => {
 };
 
 const SelectAllBtn = () => {
-  return document.querySelectorAll('.sidebar-item');
+  return document.querySelectorAll('.itemMenu');
 };
 
 const menu = () => {
