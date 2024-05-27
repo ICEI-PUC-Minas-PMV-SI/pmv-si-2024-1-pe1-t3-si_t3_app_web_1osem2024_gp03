@@ -23,7 +23,7 @@ const login = async () => {
 const callback = async (e) => {
   e.preventDefault();
   const message = await login();
-  if (!message) toastHandle('Email ou senha incorreto.');
+  if (!message) toastHandle('Email ou senha incorretos.');
 };
 
 const loginBtn = document.querySelector('.login-btn');
