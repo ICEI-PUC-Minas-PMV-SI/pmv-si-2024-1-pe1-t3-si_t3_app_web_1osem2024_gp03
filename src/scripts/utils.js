@@ -66,3 +66,57 @@ export const menuActive = () => {
     btn.classList.add('active');
   });
 };
+
+export const creatProgressBars = () => {
+  const loggedUser = getData('user');
+  const goals = JSON.parse(getData(loggedUser)).goals;
+  const progressContainer = document.querySelector('.progressContainer');
+  const firstChild = progressContainer.firstElementChild;
+
+  while (progressContainer.firstChild) {
+    progressContainer.removeChild(progressContainer.firstChild);
+  }
+  progressContainer.appendChild(firstChild);
+
+  goals.forEach((goal) => {
+    const progressBarDiv = document.createElement('div');
+    progressBarDiv.className =
+      'progressBar d-flex mb-3 justify-content-center align-items-center col-12';
+
+    const goalNameSpan = document.createElement('span');
+    goalNameSpan.className = 'goalName me-1 text-center';
+    goalNameSpan.textContent = goal.title;
+
+    const progressDiv = document.createElement('div');
+    progressDiv.className = 'progress w-75 me-1 rounded-pill';
+
+    const progressBarInnerDiv = document.createElement('div');
+    progressBarInnerDiv.className = 'progress-bar rounded-pill';
+    progressBarInnerDiv.setAttribute('role', 'progressbar');
+    progressBarInnerDiv.setAttribute(
+      'aria-valuenow',
+      ((goal.current / goal.goal) * 100).toString()
+    ); // 50% hardcoded
+    progressBarInnerDiv.setAttribute('aria-valuemin', '0');
+    progressBarInnerDiv.setAttribute('aria-valuemax', '100');
+    progressBarInnerDiv.style.width = `${(goal.current / goal.goal) * 100}%`;
+
+    const progressBarSpan = document.createElement('span');
+    progressBarSpan.className = 'fw-bold';
+    progressBarSpan.textContent = `${(goal.current / goal.goal) * 100}%`;
+
+    progressBarInnerDiv.appendChild(progressBarSpan);
+
+    progressDiv.appendChild(progressBarInnerDiv);
+
+    const trashIcon = document.createElement('i');
+    trashIcon.className = 'trash fa-solid fa-trash-can';
+
+    progressBarDiv.appendChild(goalNameSpan);
+    progressBarDiv.appendChild(progressDiv);
+    progressBarDiv.appendChild(trashIcon);
+
+    const progressContainer = document.querySelector('.progressContainer');
+    progressContainer.appendChild(progressBarDiv);
+  });
+};
