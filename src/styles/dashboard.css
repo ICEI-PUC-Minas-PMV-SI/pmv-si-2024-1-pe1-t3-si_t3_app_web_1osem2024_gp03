@@ -36,9 +36,11 @@
     justify-content: space-between;
     margin: 2rem 0 1rem;
     gap: 1rem;
+    /* height: 375px; */
 
     @media (max-width: 700px) {
         flex-direction: column;
+        justify-content: unset;
         gap: 0.5rem;
     }
 }
