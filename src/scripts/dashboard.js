@@ -1,4 +1,9 @@
-import { menuActive, getData, creatProgressBars } from "./utils.js";
+import {
+  menuActive,
+  getData,
+  creatProgressBars,
+  getCategoryColor,
+} from "./utils.js";
 setTimeout(menuActive, 100);
 
 const setSummaryCardValue = (element, value) => {
@@ -51,50 +56,66 @@ const mockTransactions = [
     title: "Posto de gasolina",
     date: "15/02/2024",
     value: -100.0,
+    category: "Transporte",
   },
   {
     title: "Aluguel",
     date: "15/02/2024",
     value: -1200.0,
+    category: "Casa",
   },
   {
     title: "Curso de inglês",
     date: "15/02/2024",
     value: -200.0,
+    category: "Educação",
   },
   {
     title: "Almoço",
     date: "15/02/2024",
     value: -50.0,
+    category: "Alimentação",
   },
   {
     title: "Lanche",
     date: "15/02/2024",
     value: -20.0,
+    category: "Alimentação",
   },
   {
     title: "Cinema",
     date: "15/02/2024",
     value: -40.0,
+    category: "Lazer",
   },
   {
     title: "Uber",
     date: "15/02/2024",
     value: -30.0,
+    category: "Transporte",
   },
 ];
 
 const transactionsContainer = document.querySelector("#transactions-container");
 const showTransactionSign = (value) => (value < 0 ? "-" : "+");
 
+const allExpensesValue = mockTransactions
+  .reduce((acc, { value }) => {
+    if (value < 0) return acc + Math.abs(value);
+    return acc;
+  }, 0)
+  .toFixed(2);
+
 mockTransactions
   .slice(-6)
   .reverse()
-  .forEach(({ title, date, value }) => {
+  .forEach(({ title, date, value, category }) => {
     const transactionDiv = document.createElement("tr");
     transactionDiv.classList.add("transaction-row");
     transactionDiv.innerHTML = `
-    <td><i class="category-ball green"></i></td>
+    <td><i class="category-ball" style="background-color: ${getCategoryColor(
+      category,
+    )}"></i></td>
     <td>${title}</td>
     <td>${date}</td>
     <td>${showTransactionSign(value)}R$ ${Math.abs(value).toFixed(2)}</td>
@@ -103,4 +124,101 @@ mockTransactions
     transactionsContainer.appendChild(transactionDiv);
   });
 
-// creatProgressBars();
+creatProgressBars();
+
+document.addEventListener("DOMContentLoaded", function () {
+  Chart.register({
+    id: "centerText",
+    afterDatasetsDraw: function (chart) {
+      const width = chart.width;
+      const height = chart.height;
+      const ctx = chart.ctx;
+
+      ctx.restore();
+
+      const mainFontSize = (height / 12).toFixed(2);
+      const subFontSize = (height / 18).toFixed(2);
+
+      ctx.font = mainFontSize + "px sans-serif";
+      ctx.textBaseline = "middle";
+
+      const text = `R$ ${allExpensesValue}`;
+      const textX = Math.round((width - ctx.measureText(text).width) / 2);
+      const textY = height / 2.6;
+
+      ctx.fillText(text, textX, textY);
+
+      ctx.font = subFontSize + "px sans-serif";
+      const subText = "Total";
+      const subTextX = Math.round((width - ctx.measureText(subText).width) / 2);
+      const subTextY = height / 2.1;
+
+      ctx.fillText(subText, subTextX, subTextY);
+      ctx.save();
+    },
+  });
+
+  const ctx = document.getElementById("expenseDoughnutChart").getContext("2d");
+  const expenseDoughnutChart = new Chart(ctx, {
+    type: "doughnut",
+    data: {
+      labels: [
+        "Casa",
+        "Alimentação",
+        "Transporte",
+        "Educação",
+        "Saúde",
+        "Lazer",
+        "Outros",
+      ],
+      datasets: [
+        {
+          label: "Gastos por Categoria",
+          data: [25, 15, 10, 20, 20, 10],
+          backgroundColor: [
+            "rgba(255, 0, 4, 0.5)",
+            "rgba(255, 99, 132, 0.5)",
+            "rgba(54, 162, 235, 0.5)",
+            "rgba(255, 206, 86, 0.5)",
+            "rgba(75, 192, 192, 0.5)",
+            "rgba(153, 102, 255, 0.5)",
+            "rgba(255, 159, 64, 0.5)",
+          ],
+          borderColor: [
+            "rgba(255, 0, 4, 1)",
+            "rgba(255, 99, 132, 1)",
+            "rgba(54, 162, 235, 1)",
+            "rgba(255, 206, 86, 1)",
+            "rgba(75, 192, 192, 1)",
+            "rgba(153, 102, 255, 1)",
+            "rgba(255, 159, 64, 1)",
+          ],
+          borderWidth: 1,
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      cutout: "80%",
+      plugins: {
+        legend: {
+          position: "bottom",
+        },
+        tooltip: {
+          callbacks: {
+            label: function (context) {
+              let label = context.label || "";
+              if (label) label += ": ";
+
+              label += context.raw + "%";
+              return label;
+            },
+          },
+        },
+        centerText: {
+          text: "Total",
+        },
+      },
+    },
+  });
+});
