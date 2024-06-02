@@ -1,4 +1,4 @@
-export async function importHtmlFile(url, targetDiv = 'sidemenu') {
+export async function importHtmlFile(url, targetDiv = "sidemenu") {
   const response = await fetch(url);
   const html = await response.text();
 
@@ -17,7 +17,7 @@ export const setData = (key, value) => {
 export const hashPassword = async (password) => {
   const encoder = new TextEncoder();
   const data = encoder.encode(password);
-  const hash = await crypto.subtle.digest('SHA-256', data);
+  const hash = await crypto.subtle.digest("SHA-256", data);
   return hexString(hash);
 };
 
@@ -25,29 +25,29 @@ function hexString(buffer) {
   const byteArray = new Uint8Array(buffer);
   const hexCodes = [...byteArray].map((value) => {
     const hexCode = value.toString(16);
-    return hexCode.padStart(2, '0');
+    return hexCode.padStart(2, "0");
   });
-  return hexCodes.join('');
+  return hexCodes.join("");
 }
 
 export const toastHandle = (message) => {
-  const toastTrigger = document.getElementById('liveToastBtn');
-  const toastLiveExample = document.getElementById('liveToast');
-  const toastText = document.querySelector('.toast-message');
+  const toastTrigger = document.getElementById("liveToastBtn");
+  const toastLiveExample = document.getElementById("liveToast");
+  const toastText = document.querySelector(".toast-message");
   toastText.innerHTML = message;
   const toastBootstrap =
     bootstrap.Toast.getOrCreateInstance(toastLiveExample).show();
 };
 
 const SelectAllBtn = () => {
-  return document.querySelectorAll('.itemMenu');
+  return document.querySelectorAll(".itemMenu");
 };
 
 const menu = () => {
   const menuBtns = SelectAllBtn();
   menuBtns.forEach((btn) => {
-    btn.addEventListener('click', (e) => {
-      setData('menuActive', btn.id);
+    btn.addEventListener("click", (e) => {
+      setData("menuActive", btn.id);
     });
   });
 };
@@ -55,22 +55,36 @@ const menu = () => {
 setTimeout(menu, 1000);
 
 export const menuActive = () => {
-  const menuActive = getData('menuActive');
+  const menuActive = getData("menuActive");
   if (!menuActive) return;
   const menuBtns = SelectAllBtn();
   menuBtns.forEach((btn) => {
-    btn.classList.remove('active');
+    btn.classList.remove("active");
   });
   const activeBtn = document.querySelectorAll(`#${menuActive}`);
   activeBtn.forEach((btn) => {
-    btn.classList.add('active');
+    btn.classList.add("active");
   });
 };
 
+export const getCategoryColor = (category) => {
+  const categoriesColor = {
+    Casa: "rgba(255, 0, 4, 0.5)",
+    Alimentação: "rgba(255, 99, 132, 0.5)",
+    Transporte: "rgba(54, 162, 235, 0.5)",
+    Educação: "rgba(255, 206, 86, 0.5)",
+    Saúde: "rgba(75, 192, 192, 0.5)",
+    Lazer: "rgba(153, 102, 255, 0.5)",
+    Outros: "rgba(255, 159, 64, 0.5)",
+  };
+
+  return categoriesColor[category];
+};
+
 export const creatProgressBars = () => {
-  const loggedUser = getData('user');
+  const loggedUser = getData("user");
   const goals = JSON.parse(getData(loggedUser)).goals;
-  const progressContainer = document.querySelector('.progressContainer');
+  const progressContainer = document.querySelector(".progressContainer");
   const firstChild = progressContainer.firstElementChild;
 
   while (progressContainer.firstChild) {
@@ -79,44 +93,44 @@ export const creatProgressBars = () => {
   progressContainer.appendChild(firstChild);
 
   goals.forEach((goal) => {
-    const progressBarDiv = document.createElement('div');
+    const progressBarDiv = document.createElement("div");
     progressBarDiv.className =
-      'progressBar d-flex mb-3 justify-content-center align-items-center col-12';
+      "progressBar d-flex mb-3 justify-content-center align-items-center col-12";
 
-    const goalNameSpan = document.createElement('span');
-    goalNameSpan.className = 'goalName me-1 text-center';
+    const goalNameSpan = document.createElement("span");
+    goalNameSpan.className = "goalName me-1 text-center";
     goalNameSpan.textContent = goal.title;
 
-    const progressDiv = document.createElement('div');
-    progressDiv.className = 'progress w-75 me-1 rounded-pill';
+    const progressDiv = document.createElement("div");
+    progressDiv.className = "progress w-75 me-1 rounded-pill";
 
-    const progressBarInnerDiv = document.createElement('div');
-    progressBarInnerDiv.className = 'progress-bar rounded-pill';
-    progressBarInnerDiv.setAttribute('role', 'progressbar');
+    const progressBarInnerDiv = document.createElement("div");
+    progressBarInnerDiv.className = "progress-bar rounded-pill";
+    progressBarInnerDiv.setAttribute("role", "progressbar");
     progressBarInnerDiv.setAttribute(
-      'aria-valuenow',
-      ((goal.current / goal.goal) * 100).toString()
+      "aria-valuenow",
+      ((goal.current / goal.goal) * 100).toString(),
     ); // 50% hardcoded
-    progressBarInnerDiv.setAttribute('aria-valuemin', '0');
-    progressBarInnerDiv.setAttribute('aria-valuemax', '100');
+    progressBarInnerDiv.setAttribute("aria-valuemin", "0");
+    progressBarInnerDiv.setAttribute("aria-valuemax", "100");
     progressBarInnerDiv.style.width = `${(goal.current / goal.goal) * 100}%`;
 
-    const progressBarSpan = document.createElement('span');
-    progressBarSpan.className = 'fw-bold';
+    const progressBarSpan = document.createElement("span");
+    progressBarSpan.className = "fw-bold";
     progressBarSpan.textContent = `${(goal.current / goal.goal) * 100}%`;
 
     progressBarInnerDiv.appendChild(progressBarSpan);
 
     progressDiv.appendChild(progressBarInnerDiv);
 
-    const trashIcon = document.createElement('i');
-    trashIcon.className = 'trash fa-solid fa-trash-can';
+    const trashIcon = document.createElement("i");
+    trashIcon.className = "trash fa-solid fa-trash-can";
 
     progressBarDiv.appendChild(goalNameSpan);
     progressBarDiv.appendChild(progressDiv);
     progressBarDiv.appendChild(trashIcon);
 
-    const progressContainer = document.querySelector('.progressContainer');
+    const progressContainer = document.querySelector(".progressContainer");
     progressContainer.appendChild(progressBarDiv);
   });
 };
