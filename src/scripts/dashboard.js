@@ -2,7 +2,7 @@ import {
   menuActive,
   getData,
   creatProgressBars,
-  getCategoryColor,
+  categoriesColors,
 } from "./utils.js";
 setTimeout(menuActive, 100);
 
@@ -113,9 +113,9 @@ mockTransactions
     const transactionDiv = document.createElement("tr");
     transactionDiv.classList.add("transaction-row");
     transactionDiv.innerHTML = `
-    <td><i class="category-ball" style="background-color: ${getCategoryColor(
-      category,
-    )}"></i></td>
+    <td><i class="category-ball" style="background-color: ${
+      categoriesColors[category]
+    }"></i></td>
     <td>${title}</td>
     <td>${date}</td>
     <td>${showTransactionSign(value)}R$ ${Math.abs(value).toFixed(2)}</td>
@@ -175,24 +175,10 @@ document.addEventListener("DOMContentLoaded", function () {
         {
           label: "Gastos por Categoria",
           data: [25, 15, 10, 20, 20, 10],
-          backgroundColor: [
-            "rgba(255, 0, 4, 0.5)",
-            "rgba(255, 99, 132, 0.5)",
-            "rgba(54, 162, 235, 0.5)",
-            "rgba(255, 206, 86, 0.5)",
-            "rgba(75, 192, 192, 0.5)",
-            "rgba(153, 102, 255, 0.5)",
-            "rgba(255, 159, 64, 0.5)",
-          ],
-          borderColor: [
-            "rgba(255, 0, 4, 1)",
-            "rgba(255, 99, 132, 1)",
-            "rgba(54, 162, 235, 1)",
-            "rgba(255, 206, 86, 1)",
-            "rgba(75, 192, 192, 1)",
-            "rgba(153, 102, 255, 1)",
-            "rgba(255, 159, 64, 1)",
-          ],
+          backgroundColor: Object.values(categoriesColors),
+          borderColor: Object.values(categoriesColors).map((color) =>
+            color.replace("0.5", "1"),
+          ),
           borderWidth: 1,
         },
       ],
