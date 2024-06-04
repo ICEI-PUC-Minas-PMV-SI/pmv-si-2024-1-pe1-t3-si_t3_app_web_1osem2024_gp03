@@ -120,3 +120,9 @@ export const creatProgressBars = () => {
     progressContainer.appendChild(progressBarDiv);
   });
 };
+
+export const retriveArticles = async () => {
+  const response = await fetch('/src/db/articles.json');
+  const articles = await response.json();
+  return articles;
+};
