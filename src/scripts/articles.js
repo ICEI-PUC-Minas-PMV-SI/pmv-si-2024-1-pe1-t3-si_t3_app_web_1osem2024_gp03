@@ -1,11 +1,5 @@
-import { menuActive } from './utils.js';
+import { menuActive, retriveArticles } from './utils.js';
 setTimeout(menuActive, 100);
-
-const retriveArticles = async () => {
-  const response = await fetch('/src/db/articles.json');
-  const articles = await response.json();
-  return articles;
-};
 
 const renderArticles = async (articlesArr) => {
   const articleContainer = document.querySelector('.articleContainer');
@@ -21,7 +15,7 @@ const renderArticles = async (articlesArr) => {
     // Create the image element
     const img = document.createElement('img');
     img.src =
-      'https://images.unsplash.com/photo-1604594849809-dfedbc827105?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
+      article.img;
     img.className = 'card-img-top';
     img.alt = '...';
 
