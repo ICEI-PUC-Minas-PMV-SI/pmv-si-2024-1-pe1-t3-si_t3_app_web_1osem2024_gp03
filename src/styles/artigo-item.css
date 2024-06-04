@@ -1,37 +1,54 @@
-.recuo { text-indent:4em }
+.recuo {
+  text-indent: 4em;
+}
 
 .column {
-
-position:absolute;
-
+  position: absolute;
 }
 
-.tag{
+.tag {
+  position: relative;
 
-position:relative;
+  bottom: 65px;
 
-bottom: 65px;
+  left: 5px;
 
-left: 5px;
-
-color: white;
-
+  color: white;
 }
 
-span{
-
-color: white;
-    
+span {
+  color: white;
 }
 
-.title{
-    
-    position:relative;
+.title {
+  position: relative;
 
-    bottom: 70px;
+  bottom: 70px;
 
-    left: 5px;
-
+  left: 5px;
+}
+.articleContainer {
+  margin-left: 10px;
+  width: 93%;
+}
+h4 {
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
-h4{color: white; text-shadow: black 0.1em 0.1em 0.2em}
+.content {
+  margin-bottom: 10px;
+  color: black;
+}
+
+.source {
+  color: black;
+}
+.img__header {
+  height: 500px;
+  object-fit: cover;
+}
+
+.tag span {
+  margin-left: 5px;
+}
