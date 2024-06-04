@@ -120,3 +120,26 @@ export const creatProgressBars = () => {
     progressContainer.appendChild(progressBarDiv);
   });
 };
+
+export const formatCurrency = (value) => {
+  while (value.length < 3) {
+    value = '0' + value;
+  }
+
+  let integerPart = value.slice(0, -2);
+  let decimalPart = value.slice(-2);
+
+  if (integerPart.length > 1)
+    integerPart = parseInt(integerPart).toString();
+
+  integerPart = integerPart.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+
+  return integerPart + ',' + decimalPart;
+}
+
+export const convertToFloor = (str) => {
+  let removeMask = str.replace(/\./g, '');
+  removeMask = removeMask.replace(/,/g, '.');
+
+  return parseFloat(removeMask);
+}
