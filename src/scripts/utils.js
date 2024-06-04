@@ -121,6 +121,13 @@ export const creatProgressBars = () => {
   });
 };
 
+
+export const retriveArticles = async () => {
+  const response = await fetch('/src/db/articles.json');
+  const articles = await response.json();
+  return articles;
+};
+
 export const formatCurrency = (value) => {
   while (value.length < 3) {
     value = '0' + value;
