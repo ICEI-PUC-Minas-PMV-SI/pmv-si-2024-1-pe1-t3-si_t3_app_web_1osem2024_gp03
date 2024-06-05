@@ -10,22 +10,41 @@ const setSummaryCardValue = (element, value) => {
   element.innerHTML = `R$ ${value}`;
 };
 
+const transactions = JSON.parse(getData("transactions"));
+
+const balanceValue = transactions
+  .reduce((acc, { value }) => acc + value, 0)
+  .toFixed(2);
+
+const revenueValue = transactions
+  .reduce((acc, { value }) => (value > 0 ? acc + value : acc), 0)
+  .toFixed(2);
+
+const expensesValue = transactions
+  .reduce((acc, { value }) => (value < 0 ? acc + Math.abs(value) : acc), 0)
+  .toFixed(2);
+
+const creditCardValue = transactions
+  .filter(({ category }) => category === "Cartão de Crédito")
+  .reduce((acc, { value }) => acc + Math.abs(value), 0)
+  .toFixed(2);
+
 const cards = {
   balance: {
     element: document.querySelector("#balance"),
-    value: getData("balance") || 1234.56,
+    value: balanceValue,
   },
   revenue: {
     element: document.querySelector("#revenue"),
-    value: getData("revenue") || 7890.12,
+    value: revenueValue,
   },
   expense: {
     element: document.querySelector("#expenses"),
-    value: getData("expenses") || 3456.78,
+    value: expensesValue,
   },
   creditCard: {
     element: document.querySelector("#credit-card"),
-    value: getData("credit-card") || 9012.34,
+    value: creditCardValue,
   },
 };
 
@@ -33,91 +52,22 @@ Object.values(cards).forEach(({ element, value }) => {
   setSummaryCardValue(element, value);
 });
 
-const mockTransactions = [
-  {
-    title: "Nike Air Force",
-    date: "15/02/2024",
-    value: -799.99,
-    category: "Vestuário",
-  },
-  {
-    title: "Salário",
-    date: "15/02/2024",
-    value: 3500.0,
-    category: "Salário",
-  },
-  {
-    title: "Supermercado",
-    date: "15/02/2024",
-    value: -350.0,
-    category: "Alimentação",
-  },
-  {
-    title: "Posto de gasolina",
-    date: "15/02/2024",
-    value: -100.0,
-    category: "Transporte",
-  },
-  {
-    title: "Aluguel",
-    date: "15/02/2024",
-    value: -1200.0,
-    category: "Casa",
-  },
-  {
-    title: "Curso de inglês",
-    date: "15/02/2024",
-    value: -200.0,
-    category: "Educação",
-  },
-  {
-    title: "Almoço",
-    date: "15/02/2024",
-    value: -50.0,
-    category: "Alimentação",
-  },
-  {
-    title: "Lanche",
-    date: "15/02/2024",
-    value: -20.0,
-    category: "Alimentação",
-  },
-  {
-    title: "Cinema",
-    date: "15/02/2024",
-    value: -40.0,
-    category: "Lazer",
-  },
-  {
-    title: "Uber",
-    date: "15/02/2024",
-    value: -30.0,
-    category: "Transporte",
-  },
-];
-
 const transactionsContainer = document.querySelector("#transactions-container");
 const showTransactionSign = (value) => (value < 0 ? "-" : "+");
+const expenses = transactions.filter(({ value }) => value < 0);
 
-const allExpensesValue = mockTransactions
-  .reduce((acc, { value }) => {
-    if (value < 0) return acc + Math.abs(value);
-    return acc;
-  }, 0)
-  .toFixed(2);
-
-mockTransactions
+expenses
   .slice(-6)
   .reverse()
-  .forEach(({ title, date, value, category }) => {
+  .forEach(({ description, date, value, category }) => {
     const transactionDiv = document.createElement("tr");
     transactionDiv.classList.add("transaction-row");
     transactionDiv.innerHTML = `
     <td><i class="category-ball" style="background-color: ${
       categoriesColors[category]
     }"></i></td>
-    <td>${title}</td>
-    <td>${date}</td>
+    <td>${description}</td>
+    <td>${date ?? "00/00/0000"}</td>
     <td>${showTransactionSign(value)}R$ ${Math.abs(value).toFixed(2)}</td>
     `;
 
@@ -142,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ctx.font = mainFontSize + "px sans-serif";
       ctx.textBaseline = "middle";
 
-      const text = `R$ ${allExpensesValue}`;
+      const text = `R$ ${expensesValue}`;
       const textX = Math.round((width - ctx.measureText(text).width) / 2);
       const textY = height / 2.6;
 
@@ -162,15 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const expenseDoughnutChart = new Chart(ctx, {
     type: "doughnut",
     data: {
-      labels: [
-        "Casa",
-        "Alimentação",
-        "Transporte",
-        "Educação",
-        "Saúde",
-        "Lazer",
-        "Outros",
-      ],
+      labels: Object.keys(categoriesColors),
       datasets: [
         {
           label: "Gastos por Categoria",
