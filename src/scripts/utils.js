@@ -30,10 +30,17 @@ function hexString(buffer) {
   return hexCodes.join('');
 }
 
-export const toastHandle = (message) => {
+export const toastHandle = (message, success = true) => {
+  console.log()
   const toastTrigger = document.getElementById('liveToastBtn');
   const toastLiveExample = document.getElementById('liveToast');
   const toastText = document.querySelector('.toast-message');
+  const toastHeaderELement = document.getElementsByClassName('toast-header');
+
+  // Customize toast header
+  toastHeaderELement[0].classList.remove('bg-success', 'bg-danger', 'text-light');
+  toastHeaderELement[0].classList.add(success ? 'bg-success' : 'bg-danger', 'text-light');
+
   toastText.innerHTML = message;
   const toastBootstrap =
     bootstrap.Toast.getOrCreateInstance(toastLiveExample).show();
