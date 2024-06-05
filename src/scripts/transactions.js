@@ -1,6 +1,8 @@
-import { menuActive, formatCurrency, convertToFloor } from './utils.js';
+import { menuActive, formatCurrency, convertToFloor, getData, toastHandle } from './utils.js';
 
 setTimeout(menuActive, 100);
+const loggedUser = getData('user');
+!loggedUser ? window.open('login.html', '_SELF') : null;
 
 document.addEventListener("DOMContentLoaded", function () {
     const getElement = (id) => document.getElementById(id);
@@ -55,15 +57,24 @@ document.addEventListener("DOMContentLoaded", function () {
         const isNewCategory = getElement(`${transactionType}-check-new-category`).checked;
         const newCategory = isNewCategory ? getElement(`${transactionType}-input-new-category`).value : '';
 
+        if (!value || !description || category == 'Selecione uma categoria' && !newCategory) {
+            toastHandle('O valor, a descrição e a categoria são campos obrigatórios', false);
+            return false;
+        }
+
         value = convertToFloor(value);
+        const date = new Date();
+
         const entry = {
             value: transactionType == 'income' ? value : value == 0 ? 0 : -1 * value,
             description,
-            category: isNewCategory ? newCategory : category
+            category: isNewCategory ? newCategory : category,
+            date: `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`,
         };
 
         const isInstallment = getElement(`expense-check-installments`).checked;
-        const transactions = JSON.parse(localStorage.getItem('transactions')) || [];
+        let userData = JSON.parse(localStorage.getItem(loggedUser));
+        const transactions = userData.transactions || [];
 
         if (isInstallment) {
             const installments = getElement(`expense-input-installments`).value;
@@ -74,11 +85,12 @@ document.addEventListener("DOMContentLoaded", function () {
             transactions.push(entry);
         }
 
-        localStorage.setItem('transactions', JSON.stringify(transactions));
+        userData.transactions = transactions;
+        localStorage.setItem(loggedUser, JSON.stringify(userData));
 
         getElement('income-form').reset();
         getElement('expense-form').reset();
-        alert('Transação salva com sucesso!');
+        toastHandle('Transação salva com sucesso!');
     };
 
     resetForm('income-form', 'income-input-new-category');

@@ -30,10 +30,24 @@ function hexString(buffer) {
   return hexCodes.join("");
 }
 
-export const toastHandle = (message) => {
+export const toastHandle = (message, success = true) => {
+  console.log();
   const toastTrigger = document.getElementById("liveToastBtn");
   const toastLiveExample = document.getElementById("liveToast");
   const toastText = document.querySelector(".toast-message");
+  const toastHeaderELement = document.getElementsByClassName("toast-header");
+
+  // Customize toast header
+  toastHeaderELement[0].classList.remove(
+    "bg-success",
+    "bg-danger",
+    "text-light",
+  );
+  toastHeaderELement[0].classList.add(
+    success ? "bg-success" : "bg-danger",
+    "text-light",
+  );
+
   toastText.innerHTML = message;
   const toastBootstrap =
     bootstrap.Toast.getOrCreateInstance(toastLiveExample).show();
@@ -131,32 +145,30 @@ export const creatProgressBars = () => {
   });
 };
 
-
 export const retriveArticles = async () => {
-  const response = await fetch('/src/db/articles.json');
+  const response = await fetch("/src/db/articles.json");
   const articles = await response.json();
   return articles;
 };
 
 export const formatCurrency = (value) => {
   while (value.length < 3) {
-    value = '0' + value;
+    value = "0" + value;
   }
 
   let integerPart = value.slice(0, -2);
   let decimalPart = value.slice(-2);
 
-  if (integerPart.length > 1)
-    integerPart = parseInt(integerPart).toString();
+  if (integerPart.length > 1) integerPart = parseInt(integerPart).toString();
 
-  integerPart = integerPart.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  integerPart = integerPart.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
-  return integerPart + ',' + decimalPart;
-}
+  return integerPart + "," + decimalPart;
+};
 
 export const convertToFloor = (str) => {
-  let removeMask = str.replace(/\./g, '');
-  removeMask = removeMask.replace(/,/g, '.');
+  let removeMask = str.replace(/\./g, "");
+  removeMask = removeMask.replace(/,/g, ".");
 
   return parseFloat(removeMask);
-}
+};
