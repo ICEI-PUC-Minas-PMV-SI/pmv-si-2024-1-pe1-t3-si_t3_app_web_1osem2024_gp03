@@ -61,11 +61,15 @@ document.addEventListener("DOMContentLoaded", function () {
             toastHandle('O valor, a descrição e a categoria são campos obrigatórios', false);
             return false;
         }
+
         value = convertToFloor(value);
+        const date = new Date();
+
         const entry = {
             value: transactionType == 'income' ? value : value == 0 ? 0 : -1 * value,
             description,
-            category: isNewCategory ? newCategory : category
+            category: isNewCategory ? newCategory : category,
+            date: `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`,
         };
 
         const isInstallment = getElement(`expense-check-installments`).checked;
