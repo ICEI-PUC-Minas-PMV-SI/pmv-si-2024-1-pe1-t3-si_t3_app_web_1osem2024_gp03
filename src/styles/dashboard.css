@@ -39,9 +39,20 @@
 
     @media (max-width: 700px) {
         flex-direction: column;
+        justify-content: unset;
         gap: 0.5rem;
     }
 }
+
+.chart-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+
 
 .card {
     background-color: #F2F2F2;
@@ -70,7 +81,7 @@
 .table-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 
     @media (max-width: 700px) {
         padding: 0.5rem;
@@ -81,13 +92,17 @@
     --bs-table-bg: #F2F2F2;
     --bs-border-bottom-width: 0px;
     width: 100%;
+}
 
-    td {
-        font-size: 1rem;
-        font-weight: 400;
-        color: #858585;
-        vertical-align: middle;
-    }
+.transaction-row td {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #858585;
+    height: 50px;
+}
+
+.no-transactions-message {
+    --bs-table-bg: #F2F2F2;
 }
 
 .category-ball {
@@ -127,12 +142,16 @@
     padding: 2rem;
     flex-direction: column;
     justify-content: space-around;
-    gap: 3rem;
+    gap: 1.5rem;
 
     @media (max-width: 700px) {
         gap: 2rem;
         padding: 1.5rem;
     }
+}
+
+.goalName {
+    padding: 0 2rem;
 }
 
 .progress-wrapper {
