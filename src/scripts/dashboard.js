@@ -4,13 +4,15 @@ import {
   creatProgressBars,
   categoriesColors,
 } from "./utils.js";
+
 setTimeout(menuActive, 100);
 
 const setSummaryCardValue = (element, value) => {
   element.innerHTML = `R$ ${value}`;
 };
 
-const transactions = JSON.parse(getData("transactions"));
+const loggedUser = getData("user");
+const transactions = JSON.parse(getData(loggedUser)).transactions;
 
 const balanceValue = transactions
   .reduce((acc, { value }) => acc + value, 0)
@@ -52,17 +54,19 @@ Object.values(cards).forEach(({ element, value }) => {
   setSummaryCardValue(element, value);
 });
 
-const transactionsContainer = document.querySelector("#transactions-container");
-const showTransactionSign = (value) => (value < 0 ? "-" : "+");
 const expenses = transactions.filter(({ value }) => value < 0);
 
-expenses
-  .slice(-6)
-  .reverse()
-  .forEach(({ description, date, value, category }) => {
-    const transactionDiv = document.createElement("tr");
-    transactionDiv.classList.add("transaction-row");
-    transactionDiv.innerHTML = `
+const transactionsContainer = document.querySelector("#transactions-container");
+const showTransactionSign = (value) => (value < 0 ? "-" : "+");
+
+if (expenses.length) {
+  expenses
+    .slice(-6)
+    .reverse()
+    .forEach(({ description, date, value, category }) => {
+      const transactionDiv = document.createElement("tr");
+      transactionDiv.classList.add("transaction-row");
+      transactionDiv.innerHTML = `
     <td><i class="category-ball" style="background-color: ${
       categoriesColors[category]
     }"></i></td>
@@ -71,12 +75,50 @@ expenses
     <td>${showTransactionSign(value)}R$ ${Math.abs(value).toFixed(2)}</td>
     `;
 
-    transactionsContainer.appendChild(transactionDiv);
-  });
+      transactionsContainer.appendChild(transactionDiv);
+    });
+} else {
+  const noTransactionsMessage = document.createElement("tr");
+  noTransactionsMessage.classList.add("no-transactions-message");
+  noTransactionsMessage.innerHTML = `
+  <td colspan="4" class="no-transactions-message">
+    Não há transações recentes
+  </td>
+  `;
+  transactionsContainer.appendChild(noTransactionsMessage);
+}
 
 creatProgressBars();
 
+const getPercentagesByCategory = (expenses, expensesValue) => {
+  const categories = expenses.reduce((acc, { category, value }) => {
+    acc[category] = acc[category]
+      ? acc[category] + Math.abs(value)
+      : Math.abs(value);
+    return acc;
+  }, {});
+
+  return Object.values(categories).map(
+    (value) => +((value / expensesValue) * 100).toFixed(2),
+  );
+};
+
+const getExistingExpensesCategories = (expenses) => {
+  return expenses.reduce((acc, { category }) => {
+    if (!acc.includes(category)) acc.push(category);
+    return acc;
+  }, []);
+};
+
+const getExistingExpensesCategoriesColors = (expenses) => {
+  return getExistingExpensesCategories(expenses).map(
+    (category) => categoriesColors[category],
+  );
+};
+
 document.addEventListener("DOMContentLoaded", function () {
+  const expensesCreated = expenses.length > 0;
+
   Chart.register({
     id: "centerText",
     afterDatasetsDraw: function (chart) {
@@ -92,16 +134,18 @@ document.addEventListener("DOMContentLoaded", function () {
       ctx.font = mainFontSize + "px sans-serif";
       ctx.textBaseline = "middle";
 
-      const text = `R$ ${expensesValue}`;
+      const text = expensesCreated ? `R$ ${expensesValue}` : "Nenhuma despesa";
       const textX = Math.round((width - ctx.measureText(text).width) / 2);
-      const textY = height / 2.6;
+      const textY = height / 2.4;
 
       ctx.fillText(text, textX, textY);
 
       ctx.font = subFontSize + "px sans-serif";
-      const subText = "Total";
+      const subText = expensesCreated
+        ? "Total"
+        : "Novas despesas serão exibidas aqui";
       const subTextX = Math.round((width - ctx.measureText(subText).width) / 2);
-      const subTextY = height / 2.1;
+      const subTextY = height / 2;
 
       ctx.fillText(subText, subTextX, subTextY);
       ctx.save();
@@ -109,17 +153,20 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const ctx = document.getElementById("expenseDoughnutChart").getContext("2d");
+
   const expenseDoughnutChart = new Chart(ctx, {
     type: "doughnut",
     data: {
-      labels: Object.keys(categoriesColors),
+      labels: expensesCreated && getExistingExpensesCategories(expenses),
       datasets: [
         {
           label: "Gastos por Categoria",
-          data: [25, 15, 10, 20, 20, 10],
-          backgroundColor: Object.values(categoriesColors),
-          borderColor: Object.values(categoriesColors).map((color) =>
-            color.replace("0.5", "1"),
+          data:
+            expensesCreated &&
+            getPercentagesByCategory(expenses, expensesValue),
+          backgroundColor: getExistingExpensesCategoriesColors(expenses),
+          borderColor: getExistingExpensesCategoriesColors(expenses).map(
+            (color) => color?.replace("0.5", "1"),
           ),
           borderWidth: 1,
         },
@@ -142,9 +189,6 @@ document.addEventListener("DOMContentLoaded", function () {
               return label;
             },
           },
-        },
-        centerText: {
-          text: "Total",
         },
       },
     },

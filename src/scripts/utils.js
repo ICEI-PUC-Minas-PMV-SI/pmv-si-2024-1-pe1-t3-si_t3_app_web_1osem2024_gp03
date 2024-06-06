@@ -88,6 +88,7 @@ export const categoriesColors = {
   Educação: "rgba(255, 206, 86, 0.5)",
   Saúde: "rgba(75, 192, 192, 0.5)",
   Lazer: "rgba(153, 102, 255, 0.5)",
+  "Cartão de Crédito": "rgba(255, 159, 64, 0.5)",
   Outros: "rgba(255, 159, 64, 0.5)",
 };
 
@@ -96,6 +97,14 @@ export const creatProgressBars = () => {
   const goals = JSON.parse(getData(loggedUser)).goals;
   const progressContainer = document.querySelector(".progressContainer");
   const firstChild = progressContainer.firstElementChild;
+
+  if (!goals.length) {
+    const noGoalsDiv = document.createElement("div");
+    noGoalsDiv.className = "noGoals text-center";
+    noGoalsDiv.textContent = "Nenhuma meta cadastrada";
+    progressContainer.appendChild(noGoalsDiv);
+    return;
+  }
 
   while (progressContainer.firstChild) {
     progressContainer.removeChild(progressContainer.firstChild);
