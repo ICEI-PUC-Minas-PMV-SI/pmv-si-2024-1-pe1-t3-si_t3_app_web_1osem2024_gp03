@@ -15,15 +15,15 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link href="styles/home.css" rel="stylesheet" />
+    <link href="styles/dashboard.css" rel="stylesheet" />
     <link href="styles/menu.css" rel="stylesheet" />
 
     <title>Finanças em Dia</title>
   </head>
   <body>
-    <div class="container-md">
+    <div class="container-md pb-4">
       <div id="sidemenu"></div>
-      <div class="container-md mt-5">
+      <div class="container-md mt-5 mb-5">
         <div class="header">
           <h1 class="title">Dashboard</h1>
         </div>
@@ -31,25 +31,25 @@
           <div class="card">
             <div class="card-body d-flex flex-column justify-content-between">
               <span class="card-title">Meu Saldo</span>
-              <b class="card-text">R$ 4.270,00</b>
+              <b class="card-text" id="balance">R$ 4.270,00</b>
             </div>
           </div>
           <div class="card">
             <div class="card-body d-flex flex-column justify-content-between">
               <span class="card-title">Receitas</span>
-              <b class="card-text">R$ 5.520,00</b>
+              <b class="card-text" id="revenue">R$ 5.520,00</b>
             </div>
           </div>
           <div class="card">
             <div class="card-body d-flex flex-column justify-content-between">
               <span class="card-title">Despesas</span>
-              <b class="card-text">R$ 1.250,00</b>
+              <b class="card-text" id="expenses">R$ 1.250,00</b>
             </div>
           </div>
           <div class="card">
             <div class="card-body d-flex flex-column justify-content-between">
               <span class="card-title">Cartão de crédito</span>
-              <b class="card-text">R$ 0,00</b>
+              <b class="card-text" id="credit-card">R$ 0,00</b>
             </div>
           </div>
         </div>
@@ -58,8 +58,9 @@
           <div class="d-flex flex-column medium gap-2">
             <h6 class="card-title">Despesas por categoria</h6>
             <div class="card mb-3">
-              <div class="card-body text-center">
-                <img src="/src/assets/grafico.png" alt="" srcset="" />
+              <div class="card-body chart-container">
+                <canvas id="expenseDoughnutChart"></canvas>
+                <!-- <img src="/src/assets/grafico.png" alt="" srcset="" /> -->
               </div>
             </div>
           </div>
@@ -68,26 +69,8 @@
             <h6 class="card-title">Transações</h6>
             <div class="card mb-3">
               <div class="card-body text-center table-card">
-                <table class="table mb-5">
-                  <tbody>
-                    <tr class="transaction-row">
-                      <td><i class="category-ball green"></i></td>
-                      <td>Nike Air Force 107</td>
-                      <td>15 Fev 2024</td>
-                      <td>-R$799,99</td>
-                    </tr>
-                    <tr class="transaction-row">
-                      <td><i class="category-ball smooth-green"></i></td>
-                      <td>iPhone 13 128GB</td>
-                      <td>07 Mar 2024</td>
-                      <td>-R$549,99 (3/10)</td>
-                    </tr>
-                    <tr class="transaction-row">
-                      <td><i class="category-ball orange"></i></td>
-                      <td>Supermercado</td>
-                      <td>1 Abr 2024</td>
-                      <td>-R$75,00</td>
-                    </tr>
+                <table class="table mb-1">
+                  <tbody id="transactions-container">
                   </tbody>
                 </table>
                 <a href="tela-extrato.html" class="link mt-4">Ver Extrato</a>
@@ -96,61 +79,13 @@
           </div>
         </div>
 
+
         <div class="d-flex mt-1 mb-3 justify-content-center">
           <div class="d-flex flex-column large gap-2">
             <h6 class="card-title">Metas</h6>
             <div class="card mb-3">
-              <div class="card-body text-center metas-card">
-                <div class="progress-wrapper">
-                  <span class="meta-title">Cozinha móveis planejados</span>
-                  <div
-                    class="progress"
-                    role="progressbar"
-                    aria-label="Example with label"
-                    aria-valuenow="25"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <div
-                      class="progress-bar rounded-pill"
-                      style="width: 30%"
-                    ></div>
-                    <span class="percentage">30%</span>
-                  </div>
-                </div>
-                <div class="progress-wrapper">
-                  <span class="meta-title">Carro financiamento</span>
-                  <div
-                    class="progress"
-                    role="progressbar"
-                    aria-label="Example with label"
-                    aria-valuenow="25"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <div
-                      class="progress-bar rounded-pill"
-                      style="width: 15%"
-                    ></div>
-                    <span class="percentage">15%</span>
-                  </div>
-                </div>
-                <div class="progress-wrapper">
-                  <span class="meta-title">Apartamento novo</span>
-                  <div
-                    class="progress"
-                    role="progressbar"
-                    aria-label="Example with label"
-                    aria-valuenow="25"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <div
-                      class="progress-bar rounded-pill"
-                      style="width: 38%"
-                    ></div>
-                    <span class="percentage">38%</span>
-                  </div>
+              <div class="card-body text-center metas-card progressContainer">
+                <div class="d-none">
                 </div>
               </div>
             </div>
@@ -168,6 +103,7 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script type="module" src="scripts/utils.js"></script>
     <script type="module">
       import { importHtmlFile } from './scripts/utils.js';
