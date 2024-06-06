@@ -11,23 +11,25 @@ const setSummaryCardValue = (element, value) => {
   element.innerHTML = `R$ ${value}`;
 };
 
+const defaultCardValue = "00,00";
+
 const loggedUser = getData("user");
 const transactions = JSON.parse(getData(loggedUser)).transactions;
 
 const balanceValue = transactions
-  .reduce((acc, { value }) => acc + value, 0)
+  ?.reduce((acc, { value }) => acc + value, 0)
   .toFixed(2);
 
 const revenueValue = transactions
-  .reduce((acc, { value }) => (value > 0 ? acc + value : acc), 0)
+  ?.reduce((acc, { value }) => (value > 0 ? acc + value : acc), 0)
   .toFixed(2);
 
 const expensesValue = transactions
-  .reduce((acc, { value }) => (value < 0 ? acc + Math.abs(value) : acc), 0)
+  ?.reduce((acc, { value }) => (value < 0 ? acc + Math.abs(value) : acc), 0)
   .toFixed(2);
 
 const creditCardValue = transactions
-  .filter(({ category }) => category === "Cartão de Crédito")
+  ?.filter(({ category }) => category === "Cartão de Crédito")
   .reduce((acc, { value }) => acc + Math.abs(value), 0)
   .toFixed(2);
 
@@ -51,16 +53,16 @@ const cards = {
 };
 
 Object.values(cards).forEach(({ element, value }) => {
-  setSummaryCardValue(element, value);
+  setSummaryCardValue(element, value ?? defaultCardValue);
 });
 
-const expenses = transactions.filter(({ value }) => value < 0);
+const expenses = transactions?.filter(({ value }) => value < 0);
 
 const transactionsContainer = document.querySelector("#transactions-container");
 const showTransactionSign = (value) => (value < 0 ? "-" : "+");
 
-if (expenses.length) {
-  expenses
+if (transactions?.length) {
+  transactions
     .slice(-6)
     .reverse()
     .forEach(({ description, date, value, category }) => {
@@ -104,20 +106,20 @@ const getPercentagesByCategory = (expenses, expensesValue) => {
 };
 
 const getExistingExpensesCategories = (expenses) => {
-  return expenses.reduce((acc, { category }) => {
+  return expenses?.reduce((acc, { category }) => {
     if (!acc.includes(category)) acc.push(category);
     return acc;
   }, []);
 };
 
 const getExistingExpensesCategoriesColors = (expenses) => {
-  return getExistingExpensesCategories(expenses).map(
+  return getExistingExpensesCategories(expenses)?.map(
     (category) => categoriesColors[category],
   );
 };
 
 document.addEventListener("DOMContentLoaded", function () {
-  const expensesCreated = expenses.length > 0;
+  const expensesCreated = expenses?.length > 0;
 
   Chart.register({
     id: "centerText",
@@ -165,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
             expensesCreated &&
             getPercentagesByCategory(expenses, expensesValue),
           backgroundColor: getExistingExpensesCategoriesColors(expenses),
-          borderColor: getExistingExpensesCategoriesColors(expenses).map(
+          borderColor: getExistingExpensesCategoriesColors(expenses)?.map(
             (color) => color?.replace("0.5", "1"),
           ),
           borderWidth: 1,

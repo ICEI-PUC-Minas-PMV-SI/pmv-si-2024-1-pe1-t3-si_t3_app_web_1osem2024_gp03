@@ -96,7 +96,7 @@ const loadGoalsOptions = () => {
   }
   progressContainer.appendChild(firstChild);
 
-  goals.forEach((goal) => {
+  goals?.forEach((goal) => {
     const goalOption = document.createElement('option');
     goalOption.value = goal.title;
     goalOption.innerText = goal.title;
