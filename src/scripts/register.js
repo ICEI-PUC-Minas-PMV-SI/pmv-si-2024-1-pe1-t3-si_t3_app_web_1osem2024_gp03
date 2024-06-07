@@ -38,9 +38,9 @@ const callback = async (e) => {
   e.preventDefault();
   const hasError = await register(e);
   if (hasError === 'Password mismatch') {
-    toastHandle('As senhas não coincidem.');
+    toastHandle('As senhas não coincidem.', false);
   } else if (hasError === 'empty fields') {
-    toastHandle('Preencha todos os campos.');
+    toastHandle('Preencha todos os campos.', false);
   } else {
     setData('registered', true);
   }
