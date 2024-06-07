@@ -73,7 +73,6 @@ const addGoal = (loggedUser) => {
     return;
   }
   newGoals.goals.push(newGoal);
-  console.log(newGoals);
   try {
     setData(loggedUser, JSON.stringify(newGoals));
     toastHandle('Meta registrada com sucesso.');
@@ -108,7 +107,6 @@ creatProgressBars();
 
 const createDeleteBtn = () => {
   const trashIcon = document.querySelectorAll('.trash');
-
   trashIcon.forEach((icon) => {
     icon.addEventListener('click', (e) => {
       const goalTitle =
@@ -120,6 +118,7 @@ const createDeleteBtn = () => {
         toastHandle('Meta excluída com sucesso.');
         creatProgressBars();
         loadGoalsOptions();
+        createDeleteBtn();
       } catch (e) {
         toastHandle('Erro ao excluir meta.', false);
       }

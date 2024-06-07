@@ -31,7 +31,6 @@ function hexString(buffer) {
 }
 
 export const toastHandle = (message, success = true) => {
-  console.log();
   const toastTrigger = document.getElementById('liveToastBtn');
   const toastLiveExample = document.getElementById('liveToast');
   const toastText = document.querySelector('.toast-message');
@@ -98,6 +97,11 @@ export const creatProgressBars = () => {
   const progressContainer = document.querySelector('.progressContainer');
   const firstChild = progressContainer.firstElementChild;
 
+  while (progressContainer.firstChild) {
+    progressContainer.removeChild(progressContainer.firstChild);
+  }
+  progressContainer.appendChild(firstChild);
+
   if (!goals.length) {
     const noGoalsDiv = document.createElement('div');
     noGoalsDiv.className = 'noGoals text-center';
@@ -105,11 +109,6 @@ export const creatProgressBars = () => {
     progressContainer.appendChild(noGoalsDiv);
     return;
   }
-
-  while (progressContainer.firstChild) {
-    progressContainer.removeChild(progressContainer.firstChild);
-  }
-  progressContainer.appendChild(firstChild);
 
   goals.forEach((goal) => {
     const progressBarDiv = document.createElement('div');
