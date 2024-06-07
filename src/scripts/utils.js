@@ -132,15 +132,13 @@ export const creatProgressBars = () => {
     progressBarInnerDiv.setAttribute('aria-valuemin', '0');
     progressBarInnerDiv.setAttribute('aria-valuemax', '100');
     progressBarInnerDiv.style.width = `${Math.round(
-      (goal.current / goal.goal) * 100,
-      2
+      (goal.current / goal.goal) * 100
     )}%`;
 
     const progressBarSpan = document.createElement('span');
     progressBarSpan.className = 'fw-bold';
     progressBarSpan.textContent = `${Math.round(
-      (goal.current / goal.goal) * 100,
-      2
+      (goal.current / goal.goal) * 100
     )}%`;
 
     progressBarInnerDiv.appendChild(progressBarSpan);
