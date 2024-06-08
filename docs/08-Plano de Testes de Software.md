@@ -141,8 +141,31 @@
 |     **Caso de Teste**     | **CT01 - Iniciar Navegação**                                                                                                                                                                                    |
 |:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Requisitos associados** | RF-016 - Os usuários devem realizar o cadastro e efetuar login para ter acesso a plataforma.                                                                                                                                                                                                          |
-|  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT01.gif)                                
+|  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT01.gif)      
 
+|     **Caso de Teste**     | **CT02 - Realizar Login**                                                                                                                                                                                    |
+|:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Requisitos associados** | RF-016 - Os usuários devem realizar o cadastro e efetuar login para ter acesso a plataforma.                                                                                                                                                                                                          |
+|  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT02.gif)
+
+|     **Caso de Teste**     | **CT03 - Realizar Cadastro**                                                                                                                                                                                    |
+|:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Requisitos associados** | RF-016 - Os usuários devem realizar o cadastro e efetuar login para ter acesso a plataforma.                                                                                                                                                                                                          |
+|  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT03.gif)  
+
+|     **Caso de Teste**     | **CT04 - Cadastrar Transações**                                                                                                                                                                                    |
+|:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Requisitos associados** | RF-001 - O sistema deve permitir que o usuário registre suas dívidas, incluindo valor, motivo e data de vencimento.
+RF-004 - O usuário deve poder registrar suas despesas fixas e variáveis de maneira sistemática.
+                                                                                                                                                                                                     |
+|  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT04.gif)  
+
+|     **Caso de Teste**     | **CT05 - **                                                                                                                                                                                    |
+|:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Requisitos associados** | RF-002 - Deve ser possível categorizar cada dívida para uma melhor organização financeira.
+RF-005 - Deve ser possível categorizar as despesas por tipo (alimentação, transporte, moradia, etc.).
+                                                                                                                                                                                                     |
+|  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT05.gif)  
 # Avaliação dos Testes de Software
 
 Durante a execução dos testes de software, obtivemos resultados significativos que proporcionam insights valiosos sobre a aplicação avaliada. Essas análises foram focadas em examinar a qualidade, a funcionalidade e a confiabilidade do software, destacando tanto seus aspectos positivos quanto às áreas que necessitam de melhorias.
