@@ -196,13 +196,13 @@ RF-013 - Deve haver um gráfico ou relatório visual que mostre o progresso em r
 |:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Requisitos associados** | RF-007 - A aplicação deve fornecer conteúdo educativo sobre finanças pessoais, adaptado à realidade e às necessidades do público em situação de inadimplência.
                                         |
-|  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT10-11.gif)  
+|  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT10e11.gif)  
 
 |     **Caso de Teste**     | **CT11 - Navegação da página de Artigos / Barra de Rolagem**                                                                                                                                                                                    |
 |:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Requisitos associados** RF-007 - A aplicação deve fornecer conteúdo educativo sobre finanças pessoais, adaptado à realidade e às necessidades do público em situação de inadimplência.
                                         |
-|  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT10-11.gif)  
+|  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT10e11.gif)  
 
 |     **Caso de Teste**     | **CT12 - Navegação da página de Artigos / Botão “Ler Mais”**                                                                                                                                                                                    |
 |:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
