@@ -175,62 +175,52 @@
 
 |     **Caso de Teste**     | **CT08 - Visualizar extrato**                                                                                                                                                                                    |
 |:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Requisitos associados** | RF-003 - O usuário deve poder visualizar de forma clara e precisa o valor total de suas dívidas, bem como uma lista detalhada de cada uma delas.
-                                        |
+| **Requisitos associados** | RF-003 - O usuário deve poder visualizar de forma clara e precisa o valor total de suas dívidas, bem como uma lista detalhada de cada uma delas.                         |
 |  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT08.gif)  
 
 |     **Caso de Teste**     | **CT09 - Realizar Logout**                                                                                                                                                                                    |
 |:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Requisitos associados** | RF-016 - Os usuários devem realizar o cadastro e efetuar login para ter acesso a plataforma.
-                                        |
+| **Requisitos associados** | RF-016 - Os usuários devem realizar o cadastro e efetuar login para ter acesso a plataforma.             |
 |  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT09.gif)  
 
 |     **Caso de Teste**     | **CT10 - Acessar página de Artigos**                                                                                                                                                                                    |
 |:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Requisitos associados** | RF-007 - A aplicação deve fornecer conteúdo educativo sobre finanças pessoais, adaptado à realidade e às necessidades do público em situação de inadimplência.
-                                        |
+| **Requisitos associados** | RF-007 - A aplicação deve fornecer conteúdo educativo sobre finanças pessoais, adaptado à realidade e às necessidades do público em situação de inadimplência.        |
 |  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT10e11.gif)  
 
 |     **Caso de Teste**     | **CT11 - Navegação da página de Artigos / Barra de Rolagem**                                                                                                                                                                                    |
 |:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Requisitos associados** RF-007 - A aplicação deve fornecer conteúdo educativo sobre finanças pessoais, adaptado à realidade e às necessidades do público em situação de inadimplência.
-                                        |
+| **Requisitos associados** RF-007 - A aplicação deve fornecer conteúdo educativo sobre finanças pessoais, adaptado à realidade e às necessidades do público em situação de inadimplência.            |
 |  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT10e11.gif)  
 
 |     **Caso de Teste**     | **CT12 - Navegação da página de Artigos / Botão “Ler Mais”**                                                                                                                                                                                    |
 |:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Requisitos associados** RF-007 - A aplicação deve fornecer conteúdo educativo sobre finanças pessoais, adaptado à realidade e às necessidades do público em situação de inadimplência.
-                                        |
+| **Requisitos associados** RF-007 - A aplicação deve fornecer conteúdo educativo sobre finanças pessoais, adaptado à realidade e às necessidades do público em situação de inadimplência.            |
 |  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT12.gif)  
 
 |     **Caso de Teste**     | **CT13 - Navegação da página de Artigos / “Buscar Artigo”**                                                                                                                                                                                    |
 |:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Requisitos associados** | RF-007 - A aplicação deve fornecer conteúdo educativo sobre finanças pessoais, adaptado à realidade e às necessidades do público em situação de inadimplência.
-                                        |
+| **Requisitos associados** | RF-007 - A aplicação deve fornecer conteúdo educativo sobre finanças pessoais, adaptado à realidade e às necessidades do público em situação de inadimplência.                   |
 |  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT13.gif)  
 
 |     **Caso de Teste**     | **CT14 - Navegação das páginas individuais de cada Artigo / Barra de Rolagem**                                                                                                                                                                                    |
 |:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Requisitos associados** | RF-007 - A aplicação deve fornecer conteúdo educativo sobre finanças pessoais, adaptado à realidade e às necessidades do público em situação de inadimplência.
-                                        |
+| **Requisitos associados** | RF-007 - A aplicação deve fornecer conteúdo educativo sobre finanças pessoais, adaptado à realidade e às necessidades do público em situação de inadimplência.               |
 |  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT14.gif)  
 
 |     **Caso de Teste**     | **CT15 - Acessar página do Simulador**                                                                                                                                                                                    |
 |:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Requisitos associados** | RF-014 - A aplicação deve fornecer ferramentas para ajudar os usuários a avaliar alternativas financeiras, como financiamento de um carro novo versus reparos no carro atual.
-                                        |
+| **Requisitos associados** | RF-014 - A aplicação deve fornecer ferramentas para ajudar os usuários a avaliar alternativas financeiras, como financiamento de um carro novo versus reparos no carro atual.            |
 |  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT15.gif)  
 
 |     **Caso de Teste**     | **CT16 -  Utilizar recurso do Simulador**                                                                                                                                                                                    |
 |:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Requisitos associados** | RF-014 - A aplicação deve fornecer ferramentas para ajudar os usuários a avaliar alternativas financeiras, como financiamento de um carro novo versus reparos no carro atual.
-                                        |
+| **Requisitos associados** | RF-014 - A aplicação deve fornecer ferramentas para ajudar os usuários a avaliar alternativas financeiras, como financiamento de um carro novo versus reparos no carro atual.                 |
 |  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT16.gif)  
 
 |     **Caso de Teste**     | **CT17 - Utilizar recurso do Simulador - Parte 2**                                                                                                                                                                                    |
 |:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Requisitos associados** | RF-014 - A aplicação deve fornecer ferramentas para ajudar os usuários a avaliar alternativas financeiras, como financiamento de um carro novo versus reparos no carro atual.
-                                        |
+| **Requisitos associados** | RF-014 - A aplicação deve fornecer ferramentas para ajudar os usuários a avaliar alternativas financeiras, como financiamento de um carro novo versus reparos no carro atual.                 |
 |  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT17.gif)  
 
 # Avaliação dos Testes de Software
