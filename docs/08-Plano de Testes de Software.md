@@ -142,6 +142,7 @@
 |:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Requisitos associados** | RF-016 - Os usuários devem realizar o cadastro e efetuar login para ter acesso a plataforma.                                                                                                                                                                                                          |
 |  **Teste Realizado**   |    ![/gifsTestes/CT01.gif]                
+|  **Teste Realizado**   |  <img>/docs/gifs testes/CT01.gif</img>                  
 
 # Avaliação dos Testes de Software
 
