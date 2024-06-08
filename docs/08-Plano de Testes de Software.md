@@ -136,6 +136,13 @@
 |   **Dados de entrada**    | Clique simples nos botões de Veículo, Imóvel e Empréstimo                                                                                                                                |
 |   **Resultado obtido**    | Falha: a opção escolhida fica devidamente destacada, porém não há nenhuma outra alteração visível. Ao trocarmos de categoria, o simulador “carrega” os dados previamente digitados; o ideal seria que os campos fossem apagados. Sugestão de inclusão de link para a página do Bacen com as taxas de juros praticadas pelas instituições financeiras (https://www.bcb.gov.br/estatisticas/txjuros) |
 
+# Plano de Testes de Software
+
+|     **Caso de Teste**     | **CT01 - Iniciar Navegação**                                                                                                                                                                                    |
+|:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Requisitos associados** | RF-016 - Os usuários devem realizar o cadastro e efetuar login para ter acesso a plataforma.                                                                                                                                                                                                          |
+|  **Teste Realizado**   |  /docs/gifs testes/CT01.gif                  
+
 # Avaliação dos Testes de Software
 
 Durante a execução dos testes de software, obtivemos resultados significativos que proporcionam insights valiosos sobre a aplicação avaliada. Essas análises foram focadas em examinar a qualidade, a funcionalidade e a confiabilidade do software, destacando tanto seus aspectos positivos quanto às áreas que necessitam de melhorias.
