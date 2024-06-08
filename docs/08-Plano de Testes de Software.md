@@ -165,14 +165,12 @@
 
 |     **Caso de Teste**     | **CT06 - Criar Nova Meta**                                                                                                                                                                                    |
 |:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Requisitos associados** | RF-010 - A aplicação deve permitir que os usuários estabeleçam metas financeiras realistas e acompanhem seu progresso em relação ao orçamento estipulado. RF-013 - Deve haver um gráfico ou relatório visual que mostre o progresso em relação às metas financeiras estabelecidas.
-                                        |
+| **Requisitos associados** | RF-010 - A aplicação deve permitir que os usuários estabeleçam metas financeiras realistas e acompanhem seu progresso em relação ao orçamento estipulado. RF-013 - Deve haver um gráfico ou relatório visual que mostre o progresso em relação às metas financeiras estabelecidas.                     |
 |  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT06.gif)  
 
 |     **Caso de Teste**     | **CT07 - Adicionar saldo à meta**                                                                                                                                                                                    |
 |:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Requisitos associados** | RF-010 - A aplicação deve permitir que os usuários estabeleçam metas financeiras realistas e acompanhem seu progresso em relação ao orçamento estipulado. RF-013 - Deve haver um gráfico ou relatório visual que mostre o progresso em relação às metas financeiras estabelecidas.
-                                        |
+| **Requisitos associados** | RF-010 - A aplicação deve permitir que os usuários estabeleçam metas financeiras realistas e acompanhem seu progresso em relação ao orçamento estipulado. RF-013 - Deve haver um gráfico ou relatório visual que mostre o progresso em relação às metas financeiras estabelecidas.           |
 |  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT07.gif)  
 
 |     **Caso de Teste**     | **CT08 - Visualizar extrato**                                                                                                                                                                                    |
