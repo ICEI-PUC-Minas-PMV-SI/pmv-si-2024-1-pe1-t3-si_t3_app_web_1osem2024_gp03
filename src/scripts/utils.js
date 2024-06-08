@@ -81,12 +81,12 @@ export const menuActive = () => {
 };
 
 export const categoriesColors = {
-  Casa: 'rgba(255, 0, 4, 0.5)',
   Alimentação: 'rgba(255, 99, 132, 0.5)',
-  Transporte: 'rgba(54, 162, 235, 0.5)',
+  Casa: 'rgba(255, 0, 4, 0.5)',
   Educação: 'rgba(255, 206, 86, 0.5)',
-  Saúde: 'rgba(75, 192, 192, 0.5)',
   Lazer: 'rgba(153, 102, 255, 0.5)',
+  Saúde: 'rgba(75, 192, 192, 0.5)',
+  Transporte: 'rgba(54, 162, 235, 0.5)',
   'Cartão de Crédito': 'rgba(255, 159, 64, 0.5)',
   Outros: 'rgba(255, 159, 64, 0.5)',
 };
