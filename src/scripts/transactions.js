@@ -8,11 +8,14 @@ const getElement = (id) => document.getElementById(id);
 
 const populateSelects = () => {
     const categories = Object.keys(categoriesColors);
+    const customCategories = JSON.parse(localStorage.getItem(loggedUser)).customCategories || [];
+    const allCategories = categories.concat(customCategories);
+
     const incomeSelect = document.getElementById('income-category');
     const expenseSelect = document.getElementById('expense-category');
 
     function addOptions(selectElement) {
-        categories.forEach(category => {
+        allCategories.forEach(category => {
             const option = document.createElement('option');
             option.value = category;
             option.textContent = category;
@@ -100,6 +103,11 @@ const saveTransaction = () => {
         }
     } else {
         transactions.push(entry);
+    }
+
+    if (isNewCategory) {
+        const customCategories = userData.customCategories || [];
+        userData.customCategories = [...customCategories, newCategory];
     }
 
     userData.transactions = transactions;
