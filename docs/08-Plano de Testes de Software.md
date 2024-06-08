@@ -141,7 +141,7 @@
 |     **Caso de Teste**     | **CT01 - Iniciar Navegação**                                                                                                                                                                                    |
 |:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Requisitos associados** | RF-016 - Os usuários devem realizar o cadastro e efetuar login para ter acesso a plataforma.                                                                                                                                                                                                          |
-|  **Teste Realizado**   |    !(/gifsTestes/CT01.gif)                                
+|  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT01.gif)                                
 
 # Avaliação dos Testes de Software
 
