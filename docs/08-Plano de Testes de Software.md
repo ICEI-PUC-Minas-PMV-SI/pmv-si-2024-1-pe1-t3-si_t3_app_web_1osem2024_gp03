@@ -156,16 +156,90 @@
 |     **Caso de Teste**     | **CT04 - Cadastrar Transações**                                                                                                                                                                                    |
 |:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Requisitos associados** | RF-001 - O sistema deve permitir que o usuário registre suas dívidas, incluindo valor, motivo e data de vencimento.
-RF-004 - O usuário deve poder registrar suas despesas fixas e variáveis de maneira sistemática.
-                                                                                                                                                                                                     |
+RF-004 - O usuário deve poder registrar suas despesas fixas e variáveis de maneira sistemática.                                                                                                                                                                                                         |
 |  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT04.gif)  
 
-|     **Caso de Teste**     | **CT05 - **                                                                                                                                                                                    |
+|     **Caso de Teste**     | **CT05 - Criar Nova Categoria**                                                                                                                                                                                    |
 |:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Requisitos associados** | RF-002 - Deve ser possível categorizar cada dívida para uma melhor organização financeira.
 RF-005 - Deve ser possível categorizar as despesas por tipo (alimentação, transporte, moradia, etc.).
-                                                                                                                                                                                                     |
+                                        |
 |  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT05.gif)  
+
+|     **Caso de Teste**     | **CT06 - Criar Nova Meta**                                                                                                                                                                                    |
+|:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Requisitos associados** | RF-010 - A aplicação deve permitir que os usuários estabeleçam metas financeiras realistas e acompanhem seu progresso em relação ao orçamento estipulado.
+RF-013 - Deve haver um gráfico ou relatório visual que mostre o progresso em relação às metas financeiras estabelecidas.
+                                        |
+|  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT06.gif)  
+
+|     **Caso de Teste**     | **CT07 - Adicionar saldo à meta**                                                                                                                                                                                    |
+|:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Requisitos associados** | RF-010 - A aplicação deve permitir que os usuários estabeleçam metas financeiras realistas e acompanhem seu progresso em relação ao orçamento estipulado.
+RF-013 - Deve haver um gráfico ou relatório visual que mostre o progresso em relação às metas financeiras estabelecidas.
+                                        |
+|  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT07.gif)  
+
+|     **Caso de Teste**     | **CT08 - Visualizar extrato**                                                                                                                                                                                    |
+|:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Requisitos associados** | RF-003 - O usuário deve poder visualizar de forma clara e precisa o valor total de suas dívidas, bem como uma lista detalhada de cada uma delas.
+                                        |
+|  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT08.gif)  
+
+|     **Caso de Teste**     | **CT09 - Realizar Logout**                                                                                                                                                                                    |
+|:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Requisitos associados** | RF-016 - Os usuários devem realizar o cadastro e efetuar login para ter acesso a plataforma.
+                                        |
+|  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT09.gif)  
+
+|     **Caso de Teste**     | **CT10 - Acessar página de Artigos**                                                                                                                                                                                    |
+|:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Requisitos associados** | RF-007 - A aplicação deve fornecer conteúdo educativo sobre finanças pessoais, adaptado à realidade e às necessidades do público em situação de inadimplência.
+                                        |
+|  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT10-11.gif)  
+
+|     **Caso de Teste**     | **CT11 - Navegação da página de Artigos / Barra de Rolagem**                                                                                                                                                                                    |
+|:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Requisitos associados** RF-007 - A aplicação deve fornecer conteúdo educativo sobre finanças pessoais, adaptado à realidade e às necessidades do público em situação de inadimplência.
+                                        |
+|  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT10-11.gif)  
+
+|     **Caso de Teste**     | **CT12 - Navegação da página de Artigos / Botão “Ler Mais”**                                                                                                                                                                                    |
+|:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Requisitos associados** RF-007 - A aplicação deve fornecer conteúdo educativo sobre finanças pessoais, adaptado à realidade e às necessidades do público em situação de inadimplência.
+                                        |
+|  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT12.gif)  
+
+|     **Caso de Teste**     | **CT13 - Navegação da página de Artigos / “Buscar Artigo”**                                                                                                                                                                                    |
+|:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Requisitos associados** | RF-007 - A aplicação deve fornecer conteúdo educativo sobre finanças pessoais, adaptado à realidade e às necessidades do público em situação de inadimplência.
+                                        |
+|  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT13.gif)  
+
+|     **Caso de Teste**     | **CT14 - Navegação das páginas individuais de cada Artigo / Barra de Rolagem**                                                                                                                                                                                    |
+|:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Requisitos associados** | RF-007 - A aplicação deve fornecer conteúdo educativo sobre finanças pessoais, adaptado à realidade e às necessidades do público em situação de inadimplência.
+                                        |
+|  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT14.gif)  
+
+|     **Caso de Teste**     | **CT15 - Acessar página do Simulador**                                                                                                                                                                                    |
+|:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Requisitos associados** | RF-014 - A aplicação deve fornecer ferramentas para ajudar os usuários a avaliar alternativas financeiras, como financiamento de um carro novo versus reparos no carro atual.
+                                        |
+|  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT15.gif)  
+
+|     **Caso de Teste**     | **CT16 -  Utilizar recurso do Simulador**                                                                                                                                                                                    |
+|:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Requisitos associados** | RF-014 - A aplicação deve fornecer ferramentas para ajudar os usuários a avaliar alternativas financeiras, como financiamento de um carro novo versus reparos no carro atual.
+                                        |
+|  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT16.gif)  
+
+|     **Caso de Teste**     | **CT17 - Utilizar recurso do Simulador - Parte 2**                                                                                                                                                                                    |
+|:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Requisitos associados** | RF-014 - A aplicação deve fornecer ferramentas para ajudar os usuários a avaliar alternativas financeiras, como financiamento de um carro novo versus reparos no carro atual.
+                                        |
+|  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT17.gif)  
+
 # Avaliação dos Testes de Software
 
 Durante a execução dos testes de software, obtivemos resultados significativos que proporcionam insights valiosos sobre a aplicação avaliada. Essas análises foram focadas em examinar a qualidade, a funcionalidade e a confiabilidade do software, destacando tanto seus aspectos positivos quanto às áreas que necessitam de melhorias.
