@@ -155,13 +155,13 @@
 
 |     **Caso de Teste**     | **CT04 - Cadastrar Transações**                                                                                                                                                                                    |
 |:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Requisitos associados** | RF-001 - O sistema deve permitir que o usuário registre suas dívidas, incluindo valor, motivo e data de vencimento. RF-004 - O usuário deve poder registrar suas despesas fixas e variáveis de maneira sistemática.                                                                                                                                                                                                         |
+| **Requisitos associados** | RF-001 - O sistema deve permitir que o usuário registre suas dívidas, incluindo valor, motivo e data de vencimento. RF-004 - O usuário deve poder registrar suas despesas fixas e variáveis de maneira sistemática.                                                                                                                                                                                                                                                                                                                |
 |  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT04.gif)  
 
 |     **Caso de Teste**     | **CT05 - Criar Nova Categoria**                                                                                                                                                                                    |
 |:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Requisitos associados** | RF-002 - Deve ser possível categorizar cada dívida para uma melhor organização financeira. RF-005 - Deve ser possível categorizar as despesas por tipo (alimentação, transporte, moradia, etc.).
-                                        |
+                                                                                                       |
 |  **Teste Realizado**   |    ![CT1](/docs/gifsTestes/CT05.gif)  
 
 |     **Caso de Teste**     | **CT06 - Criar Nova Meta**                                                                                                                                                                                    |
