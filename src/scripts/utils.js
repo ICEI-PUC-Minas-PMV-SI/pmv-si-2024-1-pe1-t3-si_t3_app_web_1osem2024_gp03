@@ -97,12 +97,13 @@ export const creatProgressBars = () => {
   const progressContainer = document.querySelector('.progressContainer');
   const firstChild = progressContainer.firstElementChild;
 
+
   while (progressContainer.firstChild) {
     progressContainer.removeChild(progressContainer.firstChild);
   }
   progressContainer.appendChild(firstChild);
 
-  if (!goals.length) {
+  if (!goals?.length) {
     const noGoalsDiv = document.createElement('div');
     noGoalsDiv.className = 'noGoals text-center';
     noGoalsDiv.textContent = 'Nenhuma meta cadastrada';
