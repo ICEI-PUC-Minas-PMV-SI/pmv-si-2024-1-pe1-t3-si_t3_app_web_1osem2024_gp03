@@ -108,7 +108,7 @@ Inserir as informações foi bem rápido e prático pra mim, porém senti falta 
 
 Verificou-se, a partir dos resultados coletados, que a aplicação web teve um bom desempenho em relação à taxa de sucesso na interação do usuário, posto que os cenários propostos foram concluídos com sucesso.
 
-Além disso, o aplicativo também atingiu um elevado nível de satisfação subjetiva dos usuários ao realizar os cenários propostos. Isso é comprovado pelas notas médias atribuídas em cada cenário, que variaram entre 4 (bom) e 5 (excelente).
+Além disso, o aplicativo também atingiu um elevado nível de satisfação subjetiva dos usuários ao realizar os cenários propostos. Isso é comprovado pelas notas médias atribuídas em cada cenário, que variaram entre 3 (regular) e 5 (excelente).
 
 Em relação ao tempo necessário para a realização dos cenários propostos, observou-se uma diferença entre os usuários e o especialista. Essa variação é esperada e aceitável, considerando que o especialista está familiarizado com a aplicação, enquanto os usuários, ao interagirem com o site pela primeira vez, tendem a explorar mais as informações.
 
