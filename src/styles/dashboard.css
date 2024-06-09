@@ -1,0 +1,191 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+}
+
+.title {
+    font-family: 'Inter', sans-serif;
+}
+
+.container-md {
+    font-family: "Montserrat", sans-serif;
+}
+
+.summary-container {
+    display: flex;
+    margin: 2rem 0 3rem;
+    gap: 1rem;
+
+    @media (max-width: 700px) {
+        flex-direction: column;
+        gap: 0.5rem;
+
+        > *:not(:first-child) {
+            display: none;
+        }
+    }
+}
+
+.expenses-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 1rem;
+    gap: 1rem;
+
+    @media (max-width: 700px) {
+        flex-direction: column;
+        justify-content: unset;
+        gap: 0.5rem;
+    }
+}
+
+.chart-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+
+
+.card {
+    background-color: #F2F2F2;
+    color: #000;
+    border: none;
+    flex: 1;
+    border-radius: 12px;
+}
+
+.card-title {
+    color: #AEAEB2;
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.card-text {
+    color: #3C3C3C;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.medium {
+    flex: 1;
+}
+
+.table-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (max-width: 700px) {
+        padding: 0.5rem;
+    }
+}
+
+.transaction-row {
+    --bs-table-bg: #F2F2F2;
+    --bs-border-bottom-width: 0px;
+    width: 100%;
+}
+
+.transaction-row td {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #858585;
+    height: 50px;
+}
+
+.no-transactions-message {
+    --bs-table-bg: #F2F2F2;
+}
+
+.category-ball {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.category-ball.green {
+    background-color: #FFD152;
+}
+
+.category-ball.smooth-green {
+    background-color: #C9E388;
+}
+
+.category-ball.orange {
+    background-color: #FF7F0A;
+}
+
+.link {
+    font-weight: 600;
+}
+
+.large {
+    width: 90%;
+
+    @media (max-width: 700px) {
+        width: 100%;
+    }
+}
+
+.metas-card {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1.5rem;
+
+    @media (max-width: 700px) {
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+}
+
+.goalName {
+    padding: 0 2rem;
+}
+
+.progress-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    @media (max-width: 700px) {
+        flex-direction: column;
+    }
+}
+
+.meta-title {
+    min-width: 250px;
+    color: #858585;
+}
+
+.progress {
+    width: 100%;
+    height: 25px;
+    position: relative;
+}
+
+.progress-bar {
+    background-color: #61AF93;
+}
+
+.percentage {
+    position: absolute;
+    font-weight: 600;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    width: fit-content;
+}
+

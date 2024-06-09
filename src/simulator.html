@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Finanças em Dia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://icons.getbootstrap.com/assets/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./styles/simulator.css">
+</head>
+
+<body>
+    <div class="container px-4 py-5" id="featured-3">
+        <div id="sidemenu"></div>
+        <h1 class="pb-2 border-bottom">Simulador</h1>
+        <div class="row g-4 py-5">
+            <div class="col-sm-12 col-md-6">
+                <div class="card card-custom p-2 border-0">
+                    <div class="card-header card-header-custom">
+                        Simule uma aquisição de:
+                    </div>
+                    <div class="card-body mb-2">
+                        <section class=" rounded-4 p-1 mb-4" style="background-color:rgb(197, 197, 197);">
+                            <div class="row justify-content-md-center">
+                                <div class="col">
+                                    <input type="radio" class="btn-check" name="options" id="car-option"
+                                        autocomplete="off" checked>
+                                    <label class="btn btn-white w-100 py-3 rounded-4" style="line-height:10px;"
+                                        for="car-option">
+                                        <i class="bi bi-car-front"></i></br>
+                                        <span style="font-size: 10px;">Veículo</span>
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <input type="radio" class="btn-check" name="options" id="property-option"
+                                        autocomplete="off">
+                                    <label class="btn btn-white w-100 py-3 rounded-4" style="line-height:10px;"
+                                        for="property-option">
+                                        <i class="bi bi-house"></i></br>
+                                        <span style="font-size: 10px;">Imóvel</span>
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <input type="radio" class="btn-check" name="options" id="loan-option"
+                                        autocomplete="off">
+                                    <label class="btn btn-white w-100 py-3 rounded-4" style="line-height:10px;"
+                                        for="loan-option">
+                                        <i class="bi bi-coin"></i></br>
+                                        <span style="font-size: 10px;">Empréstimo</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="row mb-2">
+                            <div class="col ms-auto">
+                                <label for="amount-loan" class="col-form-label">Valor Total:</label>
+                            </div>
+                            <div class="col-auto">
+                                <div class="input-group">
+                                    <span class="input-group-text">R$</span>
+                                    <input type="tel" class="form-control" placeholder="0,00" aria-label="Valor Total"
+                                        aria-describedby="Campo para digitar o valor total a ser simulado"
+                                        id="amount-loan" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col ms-auto">
+                                <label for="apply-value" class="col-form-label">Valor de Entrada:</label>
+                            </div>
+                            <div class="col-auto">
+                                <div class="input-group">
+                                    <span class="input-group-text">R$</span>
+                                    <input type="tel" class="form-control" placeholder="0,00"
+                                        aria-label="Valor de Entrada"
+                                        aria-describedby="Campo para digitar o valor que será dado de entrada"
+                                        id="apply-value" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col-6 text-center">
+                                <label for="interest-rate" class="form-label">Taxa de Juros% (a.m.)</label>
+                                <input type="tel" class="form-control" id="interest-rate" placeholder="0,00"
+                                    maxlength="5">
+                            </div>
+                            <div class="col-6 text-center">
+                                <label for="installments" class="form-label">Qtde. Parcelas</label>
+                                <input type="number" class="form-control" id="installments" placeholder="1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer card-footer-custom">
+                        <div class="d-grid gap-2 col-8 mx-auto mt-3">
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                data-bs-target="#modal-report">Simular</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-custom p-2 border-0" style="background-color: rgba(255, 173, 173, 0.1);">
+                    <div class="card-body">
+                        1. Em "Valor Total", digite o valor desejado;<br /><br />
+                        2. Em "Valor de Entrada", digite o valor que será usado para pagar a entrada (deixe vazio para
+                        zero);<br /><br />
+                        3. Em "Taxa de Juros", preencha com o valor em % dos juros previstos;<br /><br />
+                        4. Preencha o número de prestações e clique em "Simular"
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-report" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                        Simulação de Empréstimo
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        O valor da parcela mensal será de <strong>R$ <span
+                                id="report-loan-installment-value"></span>:</strong>
+                    </p>
+                    <p>
+                        O total será de <strong>R$ <span id="report-loan-amount"></span></strong>(<span
+                            id="report-loan-installments"></span>X de R$ <span
+                            id="report-installments-value-example"></span>)
+                    </p>
+                    <p>
+                        Os juros gerados serão de <strong>R$ <span id="report-interest-amount"></span></strong> (R$
+                        <span id="report-loan-amount-example"></span> - R$ <span
+                            id="report-loan-value-minus-apply-value-example"></span>)
+                    </p>
+                    <input type="hidden" id="transaction-type" value="income" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Ok
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+<script type="module" src="scripts/utils.js"></script>
+<script type="module">
+    import { importHtmlFile } from './scripts/utils.js'
+    await importHtmlFile('menu.html')
+</script>
+<script type="module" src="scripts/simulator.js"></script>
+
+</html>

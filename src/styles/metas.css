@@ -60,7 +60,7 @@ scrollbar-thumb {
   .goals-scrollBars {
     overflow-y: initial;
     height: auto;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
   }
 }
 input[type='number']::-webkit-inner-spin-button,

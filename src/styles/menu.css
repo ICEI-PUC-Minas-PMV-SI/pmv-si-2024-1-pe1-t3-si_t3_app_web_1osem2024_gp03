@@ -16,6 +16,7 @@
   display: flex;
   flex-direction: column;
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+  overflow-x: hidden;
 }
 
 .sidebar:hover {
@@ -113,7 +114,7 @@
     background-color: #9fb486;
     color: #3C3C3C;
   }
-  
+
   .tablet-sidebar-item.active {
     background-color: #b2da82;
     color: #3C3C3C;
@@ -147,7 +148,7 @@
     z-index: 1000;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
   }
-  
+
   .bottom-menu-item {
     display: block;
     width: 16.6%;
@@ -160,12 +161,12 @@
     color: #63783D;
     float: left;
   }
-  
+
   .bottom-menu-item:active {
     background-color: #9fb486;
     color: #3C3C3C;
   }
-  
+
   .bottom-menu-item.active {
     background-color: #b2da82;
     color: #3C3C3C;

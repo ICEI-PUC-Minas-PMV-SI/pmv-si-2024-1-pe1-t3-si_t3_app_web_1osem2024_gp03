@@ -1,51 +1,56 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Artigo - Item</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles/artigo-item.css" media="screen" />
-</head>
-<body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/artigo-item.css"
+      media="screen"
+    />
+  </head>
+  <body>
     <div class="container">
-        <div class="row">
-            <!--div class="column col-2"-->
-                <!--img src="/docs/img/navbar.jpg"-->
-            <!--/div-->
-            <div class="column col-12">
-                <div class="row">
-                    <div id="banner" class="bg-image col-12 text-left">
-                        <img src="assets/banner-artigo.jpg" alt="Título" class="col-12">
-                        <div class="title">
-                            <h4>Título do Artigo</h4>
-                        </div>
-                        <div class="tag">
-                            <span class="badge rounded-pill text-bg-light">texto</span>
-                            <span class="badge rounded-pill text-bg-light">texto</span>
-                            <span class="badge rounded-pill text-bg-light">texto</span>
-                            <span class="badge rounded-pill text-bg-light">texto</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div id="texto" class="col-12">
-                        <img src="assets/moedas.jpg" class="float-end p-2 col-6">
-                        <p class="recuo"> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
-                        specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum has been the 
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived 
-                        not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                        </p>
-                        <p class="recuo"> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make 
-                        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
-                        specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum has been the 
-                        ndustry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived 
-                        not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                        </p>
-                    </div>
-                </div>
+      <div id="sidemenu"></div>
+      <div class="row">
+        <!--div class="column col-2"-->
+        <!--img src="/docs/img/navbar.jpg"-->
+        <!--/div-->
+        <div class="articleContainer column col-12">
+          <div class="row">
+            <div id="banner" class="bg-image col-12 text-left">
+              <img alt="Título" class="img__header col-12" />
+              <div class="title">
+                <h4 class="tittle__header">Título do Artigo</h4>
+              </div>
+              <div class="tag"></div>
             </div>
+          </div>
+          <div class="row">
+            <div id="texto" class="col-12">
+              <p class="content recuo"></p>
+              <span class="source"></span>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
- </body>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script type="module" src="scripts/utils.js"></script>
+  <script type="module">
+    import { importHtmlFile } from './scripts/utils.js';
+    await importHtmlFile('menu.html');
+  </script>
+  <script type="module" src="./scripts/article-item.js"></script>
 </html>
