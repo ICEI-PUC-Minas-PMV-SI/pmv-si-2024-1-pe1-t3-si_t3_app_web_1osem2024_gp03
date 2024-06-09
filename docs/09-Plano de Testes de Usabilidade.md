@@ -23,12 +23,9 @@ Para respeitar as diretrizes da Lei Geral de Proteção de Dados, não coletamos
 
 | Nº do Cenário | Descrição do cenário - ONGs |
 |---------------|----------------------|
-| 1             | Trabalhador com baixa previsibilidade da própria renda (ex.: corretor de imóveis). Utiliza empréstimos com frequência e se endivida por não saber como organizar suas finanças. <br> Objetivo: acessar o site para registrar despesas e receitas.
-   |
-| 2             | Trabalhadora e estudante. Precisar controlar os gastos entre vida pessoal e despesas da faculdade. <br> Objetivo: acessar o portal para buscar conteúdo sobre educação financeira e realizar simulações de financiamentos.
-  |
-| 3             | Trabalhadora com dívidas acumuladas em virtude de um período de desemprego durante a pandemia. <br> Objetivo: utilizar o registro de receitas e despesas para organizar o orçamento e buscar conteúdo e simulações sobre formas de tratar o passivo de dívidas.
-  |
+| 1             | Trabalhador com baixa previsibilidade da própria renda (ex.: corretor de imóveis). Utiliza empréstimos com frequência e se endivida por não saber como organizar suas finanças. <br> Objetivo: acessar o site para registrar despesas e receitas.  |
+| 2             | Trabalhadora e estudante. Precisar controlar os gastos entre vida pessoal e despesas da faculdade. <br> Objetivo: acessar o portal para buscar conteúdo sobre educação financeira e realizar simulações de financiamentos.|
+| 3             | Trabalhadora com dívidas acumuladas em virtude de um período de desemprego durante a pandemia. <br> Objetivo: utilizar o registro de receitas e despesas para organizar o orçamento e buscar conteúdo e simulações sobre formas de tratar o passivo de dívidas. |
 | 4             |Motorista de aplicativo, com uma dívida alta para quitar no rotativo do cartão de crédito. <br> Objetivo: utilizar o registro de receitas e despesas para organizar o orçamento e buscar conteúdos e simulações sobre melhores opções de crédito para redução das dívidas. |
 
 # Registro de Testes de Usabilidade #
