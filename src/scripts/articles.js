@@ -14,8 +14,7 @@ const renderArticles = async (articlesArr) => {
 
     // Create the image element
     const img = document.createElement('img');
-    img.src =
-      article.img;
+    img.src = article.img;
     img.className = 'card-img-top';
     img.alt = '...';
 
@@ -77,11 +76,16 @@ const debounce = (func, wait) => {
 };
 
 const findArticle = async () => {
-  console.log('chamou');
-  const search = document.querySelector('.search').value;
-  console.log(search);
+  const search = document.querySelector('.search').value.toLowerCase();
   const articles = await retriveArticles();
-  const result = articles.filter((article) => article.title.includes(search));
+  const result = articles.filter(
+    (article) =>
+      article.title.toLowerCase().includes(search) ||
+      article.summary.toLowerCase().includes(search) ||
+      article.text.toLowerCase().includes(search) ||
+      article.tags.some((e) => e.toLowerCase().includes(search))
+  );
+
   renderArticles(result);
 };
 
