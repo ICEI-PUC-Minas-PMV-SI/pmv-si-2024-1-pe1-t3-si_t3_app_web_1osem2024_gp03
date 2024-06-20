@@ -73,7 +73,6 @@ const addGoal = (loggedUser) => {
     return;
   }
   newGoals.goals.push(newGoal);
-  console.log(newGoals);
   try {
     setData(loggedUser, JSON.stringify(newGoals));
     toastHandle('Meta registrada com sucesso.');

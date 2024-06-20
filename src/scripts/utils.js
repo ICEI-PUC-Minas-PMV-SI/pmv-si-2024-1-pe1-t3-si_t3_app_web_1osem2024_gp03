@@ -31,7 +31,6 @@ function hexString(buffer) {
 }
 
 export const toastHandle = (message, success = true) => {
-  console.log();
   const toastTrigger = document.getElementById("liveToastBtn");
   const toastLiveExample = document.getElementById("liveToast");
   const toastText = document.querySelector(".toast-message");
