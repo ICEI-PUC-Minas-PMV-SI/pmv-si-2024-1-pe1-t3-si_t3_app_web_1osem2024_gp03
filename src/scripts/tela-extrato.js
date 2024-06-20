@@ -1,14 +1,14 @@
 import { categoriesColors, getData } from "./utils.js";
 
 const user = getData('user')
-// console.log(user)
+
 
 const userData = JSON.parse(getData(user))
-// console.log(userData)
+
 
 
  const transactions = userData.transactions
-// console.log(transactions)
+
 
 const transactionsContainer = document.getElementById('transactions-container')
 
