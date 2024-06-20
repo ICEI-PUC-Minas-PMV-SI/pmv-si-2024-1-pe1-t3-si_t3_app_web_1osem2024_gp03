@@ -80,6 +80,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-013| Deve haver um gráfico ou relatório visual que mostre o progresso em relação às metas financeiras estabelecidas.   | MÉDIA |
 |RF-014| A aplicação deve fornecer ferramentas para ajudar os usuários a avaliar alternativas financeiras, como financiamento de um carro novo versus reparos no carro atual.   | MÉDIA |
 |RF-015| Deve haver recursos para auxiliar os usuários na negociação de suas dívidas, visando minimizar os gastos com juros.   | MÉDIA |
+|RF-016| Os usuários devem realizar o cadastro e efetuar login para ter acesso a plataforma.  | ALTA |
 
 
 ### Requisitos não Funcionais

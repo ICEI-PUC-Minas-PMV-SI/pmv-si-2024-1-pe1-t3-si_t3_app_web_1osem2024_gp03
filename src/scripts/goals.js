@@ -28,7 +28,7 @@ saveToGoal.addEventListener('click', () => {
     creatProgressBars();
     clean(addGoalBtn);
   } catch (e) {
-    toastHandle('Erro ao atualizar meta.');
+    toastHandle('Erro ao atualizar meta.', false);
   }
 });
 
@@ -69,7 +69,7 @@ const addGoal = (loggedUser) => {
   };
 
   if (!newGoal.goal || !newGoal.date || !newGoal.title) {
-    toastHandle('Preencha todos os campos.');
+    toastHandle('Preencha todos os campos.', false);
     return;
   }
   newGoals.goals.push(newGoal);
@@ -81,7 +81,7 @@ const addGoal = (loggedUser) => {
     creatProgressBars();
     createDeleteBtn();
   } catch (e) {
-    toastHandle('Erro ao registrar meta.');
+    toastHandle('Erro ao registrar meta.', false);
   }
 };
 
@@ -95,7 +95,7 @@ const loadGoalsOptions = () => {
   }
   progressContainer.appendChild(firstChild);
 
-  goals.forEach((goal) => {
+  goals?.forEach((goal) => {
     const goalOption = document.createElement('option');
     goalOption.value = goal.title;
     goalOption.innerText = goal.title;
@@ -107,7 +107,6 @@ creatProgressBars();
 
 const createDeleteBtn = () => {
   const trashIcon = document.querySelectorAll('.trash');
-
   trashIcon.forEach((icon) => {
     icon.addEventListener('click', (e) => {
       const goalTitle =
@@ -119,8 +118,9 @@ const createDeleteBtn = () => {
         toastHandle('Meta excluída com sucesso.');
         creatProgressBars();
         loadGoalsOptions();
+        createDeleteBtn();
       } catch (e) {
-        toastHandle('Erro ao excluir meta.');
+        toastHandle('Erro ao excluir meta.', false);
       }
     });
   });
