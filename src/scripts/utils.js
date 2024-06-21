@@ -185,3 +185,10 @@ export const convertToFloor = (str) => {
 
   return parseFloat(removeMask);
 };
+
+export const validateUserLoggedIn = () => {
+  const loggedUser = getData("user");
+  if (!loggedUser && !location.pathname.includes("login")) window.open('login.html', '_SELF') ;
+}
+
+validateUserLoggedIn()
