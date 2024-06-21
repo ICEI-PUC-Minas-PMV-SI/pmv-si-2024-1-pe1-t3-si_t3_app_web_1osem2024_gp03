@@ -159,7 +159,7 @@ export const creatProgressBars = () => {
 };
 
 export const retriveArticles = async () => {
-  const response = await fetch('/src/db/articles.json');
+  const response = await fetch('db/articles.json');
   const articles = await response.json();
   return articles;
 };
