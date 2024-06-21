@@ -18,11 +18,7 @@
   <body>
     <div class="container">
       <div id="sidemenu"></div>
-      <div class="row">
-        <!--div class="column col-2"-->
-        <!--img src="/docs/img/navbar.jpg"-->
-        <!--/div-->
-        <div class="articleContainer column col-12">
+        <div class="articleContainer">
           <div class="row">
             <div id="banner" class="bg-image col-12 text-left">
               <img alt="Título" class="img__header col-12" />
@@ -39,7 +35,6 @@
             </div>
           </div>
         </div>
-      </div>
     </div>
   </body>
   <script
@@ -52,5 +47,5 @@
     import { importHtmlFile } from './scripts/utils.js';
     await importHtmlFile('menu.html');
   </script>
-  <script type="module" src="./scripts/article-item.js"></script>
+  <script type="module" src="scripts/article-item.js"></script>
 </html>
