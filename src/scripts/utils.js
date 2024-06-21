@@ -188,7 +188,9 @@ export const convertToFloor = (str) => {
 
 export const validateUserLoggedIn = () => {
   const loggedUser = getData("user");
-  if (!loggedUser && !location.pathname.includes("login")) window.open('login.html', '_SELF') ;
+  const isPublicPage = location.pathname.includes("login") || location.pathname.includes("cadastro");
+
+  if (!loggedUser && !isPublicPage) window.open('login.html', '_SELF') ;
 }
 
 validateUserLoggedIn()
