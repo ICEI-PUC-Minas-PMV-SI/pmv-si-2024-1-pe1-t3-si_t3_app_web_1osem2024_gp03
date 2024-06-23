@@ -102,7 +102,7 @@
 | **Requisitos associados** | RF-007                                                                                                                                                                                                         |
 |  **Resultado esperado**   | Aplicação de filtro para exibição apenas dos artigos que contenham as palavras inseridas                                                                                                                                                       |
 |   **Dados de entrada**    | Digitação de termos na caixa de pesquisa “Buscar Artigo”                                                                                                                                                                                      |
-|   **Resultado obtido**    | Falha: motor de busca atua apenas nos títulos dos artigos e é case sensitive                                                                                                                                            |
+|   **Resultado obtido**    | Sucesso: motor de busca filtra os artigos buscando as palavras digitadas tanto no título do artigo, quanto no conteúdo e nas "breadcrumbs" |
 
 |     **Caso de Teste**     | **CT14 - Navegação das páginas individuais de cada Artigo / Barra de Rolagem**                                                                                                                                                          |
 |:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -134,7 +134,7 @@
 | **Requisitos associados** | RF-014                                                                                                                                                                                                         |
 |  **Resultado esperado**   | Troca da modalidade de financiamento                                                                                                                                       |
 |   **Dados de entrada**    | Clique simples nos botões de Veículo, Imóvel e Empréstimo                                                                                                                                |
-|   **Resultado obtido**    | Falha: a opção escolhida fica devidamente destacada, porém não há nenhuma outra alteração visível. Ao trocarmos de categoria, o simulador “carrega” os dados previamente digitados; o ideal seria que os campos fossem apagados. Sugestão de inclusão de link para a página do Bacen com as taxas de juros praticadas pelas instituições financeiras (https://www.bcb.gov.br/estatisticas/txjuros) |
+|   **Resultado obtido**    | Sucesso: o simulador faz os cálculos corretamente e reseta (zera) os campos ao trocarmos de categoria |
 
 # Plano de Testes de Software
 
