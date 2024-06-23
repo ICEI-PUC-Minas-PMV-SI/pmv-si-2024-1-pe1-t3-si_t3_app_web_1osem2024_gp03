@@ -159,7 +159,7 @@ export const creatProgressBars = () => {
 };
 
 export const retriveArticles = async () => {
-  const response = await fetch('/src/db/articles.json');
+  const response = await fetch('db/articles.json');
   const articles = await response.json();
   return articles;
 };
@@ -185,3 +185,12 @@ export const convertToFloor = (str) => {
 
   return parseFloat(removeMask);
 };
+
+export const validateUserLoggedIn = () => {
+  const loggedUser = getData("user");
+  const isPublicPage = location.pathname.includes("login") || location.pathname.includes("cadastro");
+
+  if (!loggedUser && !isPublicPage) window.open('login.html', '_SELF') ;
+}
+
+validateUserLoggedIn()
