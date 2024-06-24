@@ -1,8 +1,8 @@
 import { menuActive, formatCurrency, convertToFloor, getData, toastHandle, categoriesColors } from './utils.js';
 
 setTimeout(menuActive, 100);
+
 const loggedUser = getData('user');
-!loggedUser ? window.open('login.html', '_SELF') : null;
 
 const getElement = (id) => document.getElementById(id);
 
