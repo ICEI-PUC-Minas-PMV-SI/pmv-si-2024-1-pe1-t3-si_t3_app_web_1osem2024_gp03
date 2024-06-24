@@ -12,7 +12,6 @@ Desenvolver uma aplicação web de finanças pessoais voltada para pessoas em si
 
 * Danniel Cardoso Lucas
 * Danilo Leal Raul
-* Italo Willian Marques Resende
 * João de Sousa Lourenço
 * Marco Tulio Crecencio Araujo
 * Mariana Carvalho Silva Ribeiro
