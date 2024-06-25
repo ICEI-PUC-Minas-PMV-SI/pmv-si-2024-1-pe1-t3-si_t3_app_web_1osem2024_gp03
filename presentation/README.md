@@ -1,11 +1,10 @@
 # Apresentação da Solução
 
-Faça uma apresentação de um resumo de todos o processo de desenvolvimento e no final apresente a solução desenvolvida, usando um pequeno vídeo.
+Apresentação do site que foi desenvolvido para o projeto: Finanças em Dia.
 
-Liste os arquivos produzidos e postados nesta pasta, com suas localizaçãoes e descrição do conteúdo neste arquivo Readme.md.
+Segue abaixo os links para os arquivos da apresentação (tanto em formato PPTX quanto PDF) e para o vídeo de demonstração do site.
 
-
-* [Pitch inicial](./sample-pitch.pdf) -- arquivo com os slides da apresentação inicial
-* [Apresentação final](./sample-presentation.pdf) -- arquivo com os slides da apresentação final
+* [Apresentação final](./Apresentação-ProjetoAPPWeb-T3G3.pdf) -- arquivo com os slides da apresentação final, versão em PDF
+* [Apresentação final](./Apresentação-ProjetoAPPWeb-T3G3.pptx) -- arquivo com os slides da apresentação final, versão em PDF
 * [Vídeo de demonstração](./sample-video.mp4) -- arquivo com a demonstração do funcionamento do sistema
 
