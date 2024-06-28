@@ -1,29 +1,28 @@
 cff-version: 1.0.1
-message: Please cite this software using these metadata.
-title:
+message: Aplicação web de finanças pessoais voltada para pessoas em situação de inadimplência para ajudar a organizar suas dívidas.
+title: Finanças em Dia
 authors:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - name-suffix: Professor XXXX
-    affiliation: PUC Minas
-    family-names:
-    given-names:
+  - family-names: Cardoso Lucas
+    given-names: Danniel
+  - family-names: Leal Raul
+    given-names: Danilo
+  - family-names: de Sousa Lourenço
+    given-names: João
+  - family-names: Crecencio Araujo
+    given-names: Marco Tulio
+  - family-names: Carvalho Silva Ribeiro
+    given-names: Mariana
+  - family-names: Carvalho Cattoi da Costa
+    given-names: Rodrigo
 keywords:
-  -
-  -
-repository-code:
+  - finanças
+  - economia
+  - financeiro
+  - dinheiro
+  - metas
+  - despesas
+  - controle
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp03
 license: CC-BY-4.0
 version: 1.0.0
-date-released: 2023-06-30
+date-released: 2024-06-27
